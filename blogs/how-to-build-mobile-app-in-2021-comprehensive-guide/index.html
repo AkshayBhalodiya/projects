@@ -1,0 +1,1575 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<!-- Mirrored from www.cerdonis.tech/blogs/how-to-build-mobile-app-in-2021-comprehensive-guide/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 12:24:53 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="NpbQ2nGuO5o0iU6gZq2M_VRzKa38gk6MPQEXG9vqR5U" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.html">
+    <title>How to Build Mobile App in 2021-Comprehensive Guide</title>
+
+
+    <meta name=description
+        content="A comprehensive guide on how to build a mobile app in 2021 by following key mobile app design and development trends while leveraging the right set of technologies to create an app from scratch." />
+
+    <link rel="icon" href="../../Content/images/favicon.png" type="image/x-icon">
+    <link href="../css/bundles6c40.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .tg-innerbannervfour {
+            padding-top: 0px;
+        }
+
+        .tg-dropdowarrow {
+            color: #fff !important;
+        }
+
+        .tg-innerbannervfour figure figcaption {
+            padding: 0px;
+        }
+
+
+        .tg-innerbanner figure figcaption {
+            background: none;
+        }
+
+        .tg-description {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .tg-postcontent {
+            padding-bottom: 20px;
+            min-height: 105px;
+        }
+
+        .tg-detailbox .tg-description p {
+            /* float: left; */
+            text-align: left;
+        }
+
+        p span {
+            font-size: 18px !important;
+            color: #000000 !important;
+            font-family: Poppins, sans-serif !important;
+        }
+
+        span {
+            font-size: 18px !important;
+            color: #000000 !important;
+            font-family: Poppins, sans-serif !important;
+        }
+
+        .ePWcnt {
+            font-size: 48px;
+            line-height: 1;
+            color: rgb(0, 0, 0);
+            float: left;
+            letter-spacing: 1.54px;
+        }
+
+        .tg-copyright {
+            color: #bebebe !important;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .centered {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .parallax-slider {
+            height: 600px !important;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="467013840720199"
+        logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+    </div>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser.  to improve your experience.</p>
+    <![endif]-->
+
+    <div>
+        <div class="ws-topbar">
+            <div class="pull-left">
+                <div class="ws-topbar-message hidden-xs hiddenCell">
+                    <p class="mb-0">
+                        <a href="tel:+1 (630) 394-4254">+1 (630) 394-4254</a>
+                        |
+                        <a href="mailto: info@cerdonis.tech">info@cerdonis.tech</a>
+                    </p>
+                </div>
+            </div>
+            <div class="pull-right">
+                <ul class="ws-shop-menu">
+
+
+                    <li id="TalktoCiaran" class="ws-shop-cart">
+                        <a class="btn btn-sm" href="#ws-register-modal" data-toggle="modal">
+                            <img style="border-radius: 50%;" height="30" width="30"
+                                src="../../Content/images/home/Paul.png" />
+                            Talk to Paul!
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+
+        <header id="tg-header" class="tg-fixedheader tg-headervtwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="tg-headercontent">
+                            <strong class="tg-logo">
+                                <a href="../../index.html">
+                                    <img src="../../Content/images/logos/Secondary_logo.svg" />
+                                    <img src="../../Content/images/logos/primary_logo.svg" />
+                                </a>
+                            </strong>
+                            <nav id="tg-nav" class="tg-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#tg-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+                                    <ul>
+                                        <li class="current-menu-item fontBold">
+                                            <a href="../../index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children fontBold" id="liabout">
+                                            <span class="tg-dropdowarrow"><i class="fa fa-angle-down"></i></span>
+                                            <a>About</a>
+                                            <ul class="sub-menu">
+                                                <li style="text-transform: initial;">
+                                                    <a href="../../about/index.html">About us</a>
+                                                </li>
+                                                <li style="text-transform: initial;">
+                                                    <a href="../../how-it-works/index.html">How it works?</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children fontBold" id="liservices">
+                                            <span class="tg-dropdowarrow"><i class="fa fa-angle-down"></i></span>
+                                            <a>Services</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Mobile App
+                                                        Development</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../mobile-app-development-company-in-usa/index.html">Mobile
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../android-app-development-company-in-usa/index.html">Android
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../iphone-app-development-company-in-usa/index.html">iPhone
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../react-native-development-company-in-usa/index.html">React
+                                                                Native Development</a></li>
+                                                        <li><a
+                                                                href="../../ux-ui-app-development-company-in-usa/index.html">UI/UX
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../prototype-mvp-development-company-in-usa/index.html">Prototype
+                                                                & MVP Development</a></li>
+                                                        <li><a href="../../game-development-company-in-usa/index.html">Mobile
+                                                                Game Development</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Web Development</a>
+                                                    <ul class="sub-menu submenuheight">
+                                                        <li><a
+                                                                href="../../asp-dotnet-mvc-development-company-in-usa/index.html">.Net
+                                                                MVC Development</a></li>
+                                                        <li><a
+                                                                href="../../asp-dotnet-core-development-company-in-usa/index.html">.Net
+                                                                Core Development</a></li>
+                                                        <li><a
+                                                                href="../../custom-software-development-company-in-usa/index.html">Custom
+                                                                Software Solutions</a></li>
+                                                        <li><a
+                                                                href="../../web-app-development-company-in-usa/index.html">Web
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../mobile-websites-development-company-in-usa/index.html">Mobile
+                                                                Websites Development</a></li>
+                                                        <li><a
+                                                                href="../../reactjs-development-company-in-usa/index.html">ReactJs
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../responsive-website-design-company-in-usa/index.html">Website
+                                                                Design</a></li>
+                                                        <li><a
+                                                                href="../../wordpress-development-company-in-usa/index.html">WordPress</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="../../sitecore-developing-company-in-usa/index.html">SiteCore
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../sharepoint-development-company-in-usa/index.html">SharePoint
+                                                                Development</a></li>
+                                                        <li><a href="../../ssra-development-company-in-usa/index.html">SSRS
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../accelerated-mobile-page-website-development-in-usa/index.html">AMP
+                                                                Websites</a></li>
+                                                        <li><a
+                                                                href="../../epicor-customization-company-in-usa/index.html">Epicor
+                                                                Customization Services</a></li>
+                                                        <li><a
+                                                                href="../../epicor-development-company-in-usa/index.html">Epicor
+                                                                Development Services</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">SEO & Digital
+                                                        Marketing</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../search-engine-optimization-company-in-usa/index.html">Search
+                                                                Engine Optimization</a></li>
+                                                        <li><a href="../../digital-marketing-company-in-usa/index.html">Digital
+                                                                Marketing</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Future
+                                                        Technologies</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../internet-of-things-company-in-usa/index.html">Internet
+                                                                of Things</a></li>
+                                                        <li><a
+                                                                href="../../chatbots-development-company-in-usa/index.html">Chatbot
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../voice-apps-development-company-in-usa/index.html">VoiceApps</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Database</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../microsoft-sql-server-in-usa/index.html">Microsoft
+                                                                SQL Server</a></li>
+                                                        <li><a href="../../postgress-dba-company-in-usa/index.html">Postgres
+                                                                DBA</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Other Services</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../office-365-development-company-in-usa/index.html">Office
+                                                                365 Development</a></li>
+                                                        <li><a
+                                                                href="../../power-bi-data-analytics-company-in-usa/index.html">Power
+                                                                BI Data Analytics</a></li>
+                                                        <li><a
+                                                                href="../../blockchain-development-company-in-usa/index.html">Blockchain</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="../../wearable-app-development-company-in-usa/index.html">Wearables
+                                                                Development</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children fontBold" id="liblog">
+                                            <a href="../index.html">Blogs</a>
+                                        </li>
+                                        <li class="fontBold" id="liportfolio">
+                                            <a href="../../portfolio/index.html">Portfolio</a>
+                                        </li>
+                                        <li class="fontBold" id="licontact">
+                                            <a href="../../contact/index.html">Let's talk!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="tg-pushpage">
+
+
+
+            <section id="tg-introductions" class="tg-haslayout" data-z-index="-1" data-appear-top-offset="600"
+                data-parallax="scroll" data-image-src="../../Files/BlogImage/837f1279-98aa-4e21-968b-441eb8eec12a.jpg">
+                <div class="tg-parallax tg-parallaxmaingoal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-8 col-md-7 col-lg-7">
+                                <div class="tg-introductions">
+
+                                    <div class="tg-description" style="height:350px;">
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <main id="tg-main" class="tg-main tg-haslayout">
+                <!--************************************
+            Blog Detail Start
+    *************************************-->
+
+                <div id="tg-content" class="tg-content">
+                    <div class="tg-blogpost tg-blogdetail">
+                        <div class="tg-sectionspace tg-haslayout tg-commentsarea">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="row justify-content-center">
+                                        <div
+                                            class="col-xs-12 col-sm-12 col-md-10 col-md-push-1  col-lg-10 col-lg-push-1">
+                                            <div class="tg-detailbox">
+                                                <h1 style="text-align: center; line-height: 1.2; font-weight:600;">
+                                                    How to Build Mobile App in 2021-Comprehensive Guide
+                                                </h1>
+                                                <div class="tg-description">
+                                                    <div style="text-align: justify;">In this article, we will shed
+                                                        light on how to build a mobile app in 2021 to get ahead of the
+                                                        major competitors by surpassing them with cutting-edge
+                                                        technology integration to make your mobile app features-rich
+                                                        &amp; an exceptional mobile experience.</div>
+                                                    <div style="text-align: justify;"><br></div>
+                                                    <div style="text-align: justify;">“Customers don’t measure you on
+                                                        how hard you tried; they measure you on what you deliver” -
+                                                        Steves Jobs, Co-founder of Apple.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>And over the years, users have measured it correctly and
+                                                        ushered in success to many great apps. The mobile app industry
+                                                        had evolved dramatically since the time when the first app was
+                                                        introduced (Remember the snake game app in the Nokia phone?)
+                                                        What started with a basic game app is now revolutionized to
+                                                        numerous apps fulfilling our requirements.</div>
+                                                    <div><br></div>
+                                                    <div>Yes, it is the customers’ demands and businesses’ creativity
+                                                        that have revolutionized the usage of mobile applications.
+                                                        However, the process of mobile app development still remains the
+                                                        same.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>Today if you as a business owner want to make your mark online,
+                                                        you’ll have to go through the process of getting an app
+                                                        developed. Because obviously, no one wants to miss the <a
+                                                            rel="nofollow"
+                                                            href="https://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/">3.8
+                                                            million</a> smartphone users, which can be your customers.
+                                                        And we know you also want to be the one.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div style="text-align: center;">&nbsp;<img
+                                                            src="../../Admin/Files/BlogImage/fae5db94-7e6a-4c91-be1e-0f1e076642c3.png"
+                                                            style="width: 50%; text-align:center; float: none;"
+                                                            class=""><span
+                                                            style="background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); vertical-align: baseline; white-space: pre-wrap;"><br></span>
+                                                    </div>
+                                                    <div style="text-align: center;"><span
+                                                            style="background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); vertical-align: baseline; white-space: pre-wrap;">Image
+                                                            by </span><a rel="nofollow"
+                                                            href="https://pixabay.com/users/ijmaki-1797813/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1184865"
+                                                            style="font-size: 1rem; background-color: rgb(255, 255, 255);"><span
+                                                                style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">ijmaki</span></a><span
+                                                            style="background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); vertical-align: baseline; white-space: pre-wrap;">
+                                                            from </span><a rel="nofollow"
+                                                            href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1184865"
+                                                            style="font-size: 1rem; background-color: rgb(255, 255, 255);"><span
+                                                                style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pixabay</span></a><span
+                                                            style="font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); vertical-align: baseline; white-space: pre-wrap;">
+                                                        </span></div>
+                                                    <div>
+                                                        <div><span style="font-size: 1rem;">Studies even show that an
+                                                                American adult accessed mobile apps </span><a
+                                                                rel="nofollow"
+                                                                href="https://www.statista.com/statistics/243856/daily-app-use-by-us-mobile-app-users/"
+                                                                style="background-color: rgb(255, 255, 255); font-size: 1rem;">7.7
+                                                                times</a><span style="font-size: 1rem;"> per day and
+                                                                spent about </span><a rel="nofollow"
+                                                                href="https://kommandotech.com/statistics/how-much-time-does-the-average-person-spend-on-their-phone/"
+                                                                style="background-color: rgb(255, 255, 255); font-size: 1rem;">5.4
+                                                                hours</a><span style="font-size: 1rem;"> every day on
+                                                                their smartphones. That’s a great benefit of building a
+                                                                mobile app, don’t you think?!</span><br></div>
+                                                        <div><br></div>
+                                                        <div><b style=""><i>So, if you believe that you have an app idea
+                                                                    all structured in your mind and that can make a huge
+                                                                    difference in the lives of others, then we have
+                                                                    curated ways to build a mobile app in
+                                                                    2021’.&nbsp;</i></b></div>
+                                                        <div><br></div>
+                                                        <div>Let's shed light on how to create a successful app in 2021.
+                                                            The foremost thing which we suggest is reflecting on the
+                                                            purpose of developing a mobile app.</div>
+                                                        <div><br></div>
+                                                        <div>At Cerdonis Technologies LLC, we make our client reflect on
+                                                            the purpose - why you want to build a mobile app. The reason
+                                                            we do that is that the purpose can change the way you can
+                                                            develop an app. Your aim should mainly be to increase your
+                                                            business &amp; get a positive return on your investments
+                                                            (yes, that’s very important). Is it solely that you want to
+                                                            add value to your brand image, or want to be a unique
+                                                            solution provider like an on-demand app for online laundry
+                                                            service or wish to offer your users entertainment like
+                                                            Netflix, or is it all three! Defining the purpose pilots the
+                                                            way to a definite goal for both you and the <a
+                                                                href="../../mobile-app-development-company-in-usa/index.html"
+                                                                target="_blank">mobile app development company</a> you
+                                                            are hiring.&nbsp;&nbsp;</div>
+                                                        <div><br></div>
+                                                        <div>When the purpose is clearly described, we recommend
+                                                            creating a well-defined strategy followed by consulting
+                                                            mobile app development companies that can sync with your
+                                                            goal.&nbsp;</div>
+                                                        <div><br></div>
+                                                        <div>Secondly, we will list out the best app development
+                                                            practices your business app can adhere to with our
+                                                            experience as a custom app development company.</div>
+                                                        <div style="text-align:center;"><img
+                                                                src="../../Admin/Files/BlogImage/ae3ca088-ffc1-410d-9148-cbcf75e33ff1.png"
+                                                                style="width: 50%;"></div>
+                                                        <div style="text-align: center; "><span
+                                                                id="docs-internal-guid-0ec1316b-7fff-33ff-54be-c67022c44e17"><span
+                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Image
+                                                                    by </span><a rel="nofollow"
+                                                                    href="https://pixabay.com/users/ijmaki-1797813/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1184883"><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">ijmaki</span></a><span
+                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                    from </span><a rel="nofollow"
+                                                                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1184883"><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pixabay</span></a><span
+                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                </span></span></div>
+                                                        <div><br></div>
+                                                        <div>
+                                                            <div><b>And last but not least, we will reveal the steps to
+                                                                    build a mobile app that you can follow to get
+                                                                    million-dollar fundings for your app. To let you
+                                                                    know, we also conform to the same process, and that
+                                                                    has led us to go from 5 to 500+ projects in a matter
+                                                                    of a few years.&nbsp;&nbsp;</b></div>
+                                                            <div><br></div>
+                                                            <div>Adding to it, the article will cover the two types of
+                                                                the mobile app. And also the difference between iOS
+                                                                development &amp; android development which comes under
+                                                                Native app development.&nbsp;</div>
+                                                            <div><br></div>
+                                                            <div>Now that you know the fundamentals of app development.
+                                                                Let’s get into the comprehensive guide to build a mobile
+                                                                app in 2021. Our article is based on the step-by-step
+                                                                process.&nbsp;</div>
+                                                            <div><br></div>
+                                                            <div>Let’s take a look at the first step.&nbsp;</div>
+                                                            <div><br></div>
+                                                            <h2><span
+                                                                    style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-weight: bold;">Quick
+                                                                    recap - What is mobile app development?</span></h2>
+                                                            <h4><span
+                                                                    style="color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;">Mobile
+                                                                    app development is a procedure that involves
+                                                                    developing software applications that basically run
+                                                                    on mobile devices.</span></h4>
+                                                            <h4 style="text-align:center;"><img
+                                                                    src="../../Admin/Files/BlogImage/4b12ceb9-f68a-4f37-8f04-2d460886054a.png"
+                                                                    style="width: 50%;"></h4>
+                                                            <p style="text-align: center; "><span
+                                                                    id="docs-internal-guid-10eae4cb-7fff-f540-a1d2-5032b039ebbe"><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Image
+                                                                        by </span><a rel="nofollow"
+                                                                        href="https://pixabay.com/users/jcamargo-2826093/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2690565"><span
+                                                                            style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">José
+                                                                            Augusto Camargo</span></a><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                        from </span><a rel="nofollow"
+                                                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2690565"><span
+                                                                            style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pixabay</span></a><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                    </span></span><br></p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <h2><span
+                                                                style="font-weight: bold; color: rgb(0, 0, 0);">Different
+                                                                types of mobile apps you can build.</span></h2>
+                                                        <div><br></div>
+                                                        <div>It would be naive to lay down the mobile app development
+                                                            without knowing the two dominant types of app
+                                                            categorization.</div>
+                                                        <div><br></div>
+                                                        <h4><span
+                                                                style="font-weight: bold; color: rgb(0, 0, 0);">Reason?</span>
+                                                        </h4>
+                                                        <div>Determining the right type of app for your business will
+                                                            help you strategize the app development cycle according to
+                                                            your business requirements and allocate the requisite
+                                                            budget.&nbsp;</div>
+                                                        <div>&nbsp;</div>
+                                                        <h4><span style="font-weight: bold; color: rgb(0, 0, 0);">Here
+                                                                are the two primary app
+                                                                classifications.&nbsp;&nbsp;</span></h4>
+                                                        <ul>
+                                                            <li>Native apps</li>
+                                                            <li>Hybrid apps</li>
+                                                        </ul>
+                                                        <p><span
+                                                                style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;">First,
+                                                                let’s know what native apps are.&nbsp;</span><br></p>
+                                                        <div><br></div>
+                                                        <ol>
+                                                            <li><span style="font-weight: bold;">Native
+                                                                    Apps<br></span><span
+                                                                    style="font-weight: 700;"><br></span><span
+                                                                    style="font-style: italic;">Native apps are
+                                                                    specially developed for mobile devices like Apple
+                                                                    iOS or Android OS. So, suppose you intend to develop
+                                                                    a native app. In that case, you should know that the
+                                                                    difference between iOS development and Android
+                                                                    development is the programming languages. (iOS uses
+                                                                    ‘Objective-C or Swift’ and Android uses ‘Java or
+                                                                    Kotlin’.)<br>&nbsp;<br>Quite logically, including
+                                                                    their programming language, their technological
+                                                                    tools are also different. According to mobile app
+                                                                    developers - “Native apps are the most regarded app
+                                                                    development methods”. They are known for offering
+                                                                    high-performance levels as it is developed for a
+                                                                    specific platform and that it is the reason Native
+                                                                    apps take long to build. And thus it comes under an
+                                                                    expensive development method.&nbsp;</span><br><br>
+                                                            </li>
+                                                            <li>
+                                                                <div><span style="font-weight: bold;">Hybrid Apps</span>
+                                                                </div>
+                                                                <div><br></div>
+                                                                <div><span style="font-style: italic;">Hybrid apps are a
+                                                                        cost-efficient alternative path to native apps.
+                                                                        In mobile app developer’s terms, hybrid apps are
+                                                                        developed through the ‘write once and run it
+                                                                        everywhere' code, unlike native apps, which
+                                                                        require a different code for iOS &amp; Android
+                                                                        platforms.&nbsp;</span></div>
+                                                                <div><span style="font-style: italic;"><br></span></div>
+                                                                <div><span style="font-style: italic;">Hybrid apps are
+                                                                        built through JavaScript and can be deployed on
+                                                                        both iOS and Android platforms. The flexibility
+                                                                        of Hybrid apps is high in terms of what a hybrid
+                                                                        app can achieve. You can either go for React
+                                                                        Native development by Facebook or Flutter
+                                                                        development by Google. - These two hold the
+                                                                        leading position in Hybrid app development. By
+                                                                        choosing hybrid apps, a great advantage you’ll
+                                                                        get is saving on your budget and time because,
+                                                                        as mentioned earlier, hybrid apps can be built
+                                                                        once and be operated everywhere.&nbsp;</span>
+                                                                </div>
+                                                                <div><br></div>
+                                                                <div><span
+                                                                        style="font-style: italic; font-weight: bold; font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;">We
+                                                                        hope that by now, you may have selected which
+                                                                        kind of app to go for.&nbsp;</span></div>
+                                                            </li>
+                                                        </ol>
+                                                        <div><span style="font-weight: bold;">Now, you have understood
+                                                                two primary app classifications. Let’s advance to the
+                                                                best app development practices you can
+                                                                follow.&nbsp;</span></div>
+                                                        <div><br></div>
+                                                        <ol>
+                                                            <li>Don’t forget your competition.</li>
+                                                            <li>Invest in designing a user-friendly platform</li>
+                                                            <li>Make sure your app is secured.&nbsp;</li>
+                                                        </ol>
+                                                        <div><span
+                                                                style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;"><span
+                                                                    style="font-weight: bold;">Now let’s move on to the
+                                                                    A- Z steps to build mobile apps from scratch in
+                                                                    2021.</span></span></div>
+                                                        <div><span
+                                                                style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;"><span
+                                                                    style="font-weight: bold;"><br></span></span></div>
+                                                        <div style="text-align:center;"><img
+                                                                src="../../Admin/Files/BlogImage/febab8df-1cc4-416d-9091-296798d89584.png"
+                                                                style="width: 50%;"><span
+                                                                style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;"><span
+                                                                    style="font-weight: bold;"><br></span></span></div>
+                                                        <div style="text-align: center; "><span
+                                                                id="docs-internal-guid-9ac9a573-7fff-76bf-1810-50be46b5df68"><span
+                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Image
+                                                                    by </span><a rel="nofollow"
+                                                                    href="https://pixabay.com/users/jmexclusives-10518280/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5614157"><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Joseph
+                                                                        Mucira</span></a><span
+                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                    from </span><a rel="nofollow"
+                                                                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5614157"><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pixabay</span></a></span>
+                                                        </div>
+                                                        <div><span
+                                                                style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;"><span
+                                                                    style="font-weight: bold;"><br></span></span></div>
+                                                        <div>
+                                                            <h2 style=""><span
+                                                                    style="font-weight: 700; color: rgb(0, 0, 0);">7
+                                                                    steps to follow:</span></h2>
+                                                            <div style=""><span style="font-weight: 700;"><br></span>
+                                                            </div>
+                                                            <div style="">You need to make sure that the new platform
+                                                                you are trying to build reflects your brand image, your
+                                                                business website and inspires your audience to download
+                                                                it.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">We know it looks complicated, but it would be
+                                                                an easy bet once you take a shot at the below
+                                                                steps.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <h4>
+                                                                <ul>
+                                                                    <li><span
+                                                                            style="font-weight: bold; color: rgb(0, 0, 0);">Construct
+                                                                            a clear notion for your mobile
+                                                                            app.&nbsp;</span></li>
+                                                                </ul>
+                                                            </h4>
+                                                            <div style="">Take a pen and a paper. List down the
+                                                                objectives you want to see in your app. Ask yourself,
+                                                                will your mobile app assist you in achieving those
+                                                                goals?&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">If yes, then your vision is excellent to
+                                                                achieve and will give the idea to the next move of the
+                                                                functionalities you want to add.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">And if not, we advise you to refine your idea
+                                                                and modify it into an exceptional one. Check on your
+                                                                business requirements again; we know you will determine
+                                                                the best out of your vision.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <h4>
+                                                                <ul>
+                                                                    <li><span
+                                                                            style="font-weight: bold; color: rgb(0, 0, 0);">Fathom
+                                                                            out the way your app can get revenue.</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </h4>
+                                                            <div style="">You may ask why we are thinking of this at
+                                                                such an early stage. But as in the view of dedicated app
+                                                                developers - it’s necessary. Doing so will help you
+                                                                determine how you can adopt so that your app makes
+                                                                money. The way an app will get revenue will also impact
+                                                                your app’s user interface. Some of the usual methods can
+                                                                be listed below:</div>
+                                                            <div style=""><br></div>
+                                                            <ol>
+                                                                <li>In-app purchases</li>
+                                                                <li>In-app advertisement</li>
+                                                                <li>Upselling and cross-selling </li>
+                                                                <li>Monetizing it from the start</li>
+                                                            </ol>
+                                                            <div style=""><span
+                                                                    style="font-weight: bold; text-decoration-line: underline; font-style: italic;">Pro
+                                                                    tip:</span>&nbsp;Launch your app for free in the
+                                                                initial stage and later introduce revenue methods.
+                                                                Because a free app is likely to get more downloads.
+                                                            </div>
+                                                            <div style=""><br></div>
+                                                            <h4>
+                                                                <ul>
+                                                                    <li><span style="color: rgb(0, 0, 0);"><span
+                                                                                style="font-weight: bold;">Check on the
+                                                                                features: Segregate them based on the
+                                                                                features you want and the features you
+                                                                                need.</span>&nbsp;</span></li>
+                                                                </ul>
+                                                            </h4>
+                                                            <div style=""><span
+                                                                    style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;">Many
+                                                                    businesses make a drastic error, including countless
+                                                                    naive features in the first version of the app.
+                                                                    (Doing so doesn’t do any good only adds up to the
+                                                                    cost)</span><br></div>
+                                                            <div style=""><br></div>
+                                                            <div style="">We suggest never be like one of those.
+                                                                Instead, we opine to check on the mobile app development
+                                                                features and segregate them with the functionalities you
+                                                                would want to see and the features you required. Believe
+                                                                us, after the launch of the first version of the app,
+                                                                your users themselves will give you an idea of the
+                                                                facets they want to see in the app. Isn’t it a better
+                                                                consideration?</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">Moreover going for MVP development for your
+                                                                app will be a better option as MVP (Minimum Viable
+                                                                Product) is the first version of a product with only
+                                                                limited <a
+                                                                    href="../13-modern-mobile-app-development-features-and-requirements/index.html"
+                                                                    target="_blank">mobile app development features
+                                                                </a>and requirements that customers can use. The rest of
+                                                                the functionalities are added after early users’
+                                                                feedback, which avoids unnecessary waste of time and
+                                                                money in the development process.</div>
+                                                            <div style=""><br></div>
+                                                            <h4>
+                                                                <ul>
+                                                                    <li><span
+                                                                            style="font-weight: bold; color: rgb(0, 0, 0);">Do
+                                                                            your homework.</span></li>
+                                                                </ul>
+                                                            </h4>
+                                                            <div style="">We have encountered many clients that were
+                                                                fooled by inexpert companies just because they lacked
+                                                                tech knowledge. Thus, it’s vital to take out your time
+                                                                for your startup concept and do detailed research on the
+                                                                latest technology that supports app development.
+                                                                Nowadays, users want fast and efficient solutions, and
+                                                                only the latest technologies can support that. People
+                                                                are also more inclined towards future &amp; feature-rich
+                                                                technology. So, it’s necessary that steps of
+                                                                app-building in 2021 be taken seriously.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">Also, have an overall idea of the costs of app
+                                                                development. As we mentioned earlier, if you opt for
+                                                                native mobile app development, you will have to invest
+                                                                in two separate platforms. So that may very likely lead
+                                                                your overall cost to $100,000 (including marketing). And
+                                                                if you go for Hybrid app development, then the overall
+                                                                cost can go up to $50000. So, have a general idea of the
+                                                                costs and be up to date about the technologies.</div>
+                                                            <div style=""><br></div>
+                                                            <h4>
+                                                                <ul>
+                                                                    <li><span
+                                                                            style="font-weight: bold; color: rgb(0, 0, 0);">Find
+                                                                            your perfect tech partner.</span></li>
+                                                                </ul>
+                                                            </h4>
+                                                            <div style="">Now you have reached a stage where you need to
+                                                                go on a hunt drive to find your perfect tech partner. As
+                                                                we live in the digital age, an easy trick for you is to
+                                                                just search on Google - ‘app developers in Chicago or
+                                                                USA’ and get a list of app development companies. Browse
+                                                                through their website, and don’t forget to check their
+                                                                portfolios and client testimonials.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">Checking their portfolio will give you an
+                                                                overall idea about the company’s rank. Scrutinize their
+                                                                portfolio and check if they have ever developed an app
+                                                                based on your business genre. If yes, then fix a quick
+                                                                appointment with that mobile app development company at
+                                                                an instant moment. A pro tip is to ask as many questions
+                                                                as you have, and that should mainly include COSTS, the
+                                                                total time of development, technology stack the
+                                                                development company uses, total projects covered so far,
+                                                                whether they're into marketing or not, and many such
+                                                                questions. Doing so will, at a time, give you the
+                                                                perception of the company.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">We advise you to consult at least 7 to 8 app
+                                                                development companies and then finalize your tech
+                                                                partner. Once you have accomplished this step, you will
+                                                                further move into your unique idea’s development
+                                                                process.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">Read More:&nbsp;<a
+                                                                    href="../complete-process-of-how-to-hire-remote-developers/index.html"
+                                                                    target="_blank">A Complete Process of How to Hire
+                                                                    Remote Developers</a></div>
+                                                            <div style=""><br></div>
+                                                            <h4>
+                                                                <ul>
+                                                                    <li><span
+                                                                            style="font-weight: bold; color: rgb(0, 0, 0);">Development
+                                                                            process with your tech partner</span></li>
+                                                                </ul>
+                                                            </h4>
+                                                            <div style="">Once you have finalized your tech partner, you
+                                                                move into the development stage. At this stage, the work
+                                                                is more likely to be carried out by the mobile app
+                                                                development firm.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style=""><span
+                                                                    style="font-weight: bold; text-decoration-line: underline; font-style: italic;">Important
+                                                                    point</span> - At the very beginning only, Always,
+                                                                Always, tell your app development firm to keep you
+                                                                abreast of every development.</div>
+                                                            <div style=""><br></div>
+                                                            <div style="">Once they have understood your mobile app
+                                                                requirements, they’ll assign you a project manager. The
+                                                                project manager will further assign different app
+                                                                development stages to the team.&nbsp;</div>
+                                                            <div style=""><br></div>
+                                                            <div style="text-align:center;"><img
+                                                                    src="../../Admin/Files/BlogImage/7f3a409b-147a-4844-bbc1-2610ed3c6e0d.jpg"
+                                                                    style="width: 50%;"></div>
+                                                            <div style="text-align: center; "><span
+                                                                    id="docs-internal-guid-07b421d5-7fff-4699-4c39-46920050527b"><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Image
+                                                                        by </span><a rel="nofollow"
+                                                                        href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867748"><span
+                                                                            style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pexels</span></a><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                        from </span><a rel="nofollow"
+                                                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867748"><span
+                                                                            style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pixabay</span></a><span
+                                                                        style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                    </span></span><br></div>
+                                                            <div style=""><br></div>
+                                                            <div style="">
+                                                                <div><span
+                                                                        style="font-weight: bold;">Wireframing.</span>
+                                                                    The first output you'll get of your app is a black
+                                                                    &amp; white sketch of your app that is a wireframe
+                                                                    that a firm’s design strategist would lay out. The
+                                                                    process of mobile app designing will give you a
+                                                                    basic idea of how your app might look like.
+                                                                    Wireframing also demonstrates your users’ journey to
+                                                                    complete your desired action. In this stage, the
+                                                                    development firm will ask for your feedback, and
+                                                                    here, you can suggest if you want to add or subtract
+                                                                    something.&nbsp;</div>
+                                                                <div><br></div>
+                                                                <div><span
+                                                                        style="font-weight: bold;">Prototyping.</span>
+                                                                    Your approval will further open doors to prototyping
+                                                                    the app. Prototyping an app involves creating a user
+                                                                    interface for your app. Visuals, colors, features,
+                                                                    buttons, designs, fonts, etc., are added to the app
+                                                                    to give an aesthetically pleasing look. The user
+                                                                    interface portrays your brand image to your users.
+                                                                    User Interface is like the first impression of your
+                                                                    app to your users. It should be simple, appealing,
+                                                                    and clustered free. If the users don’t find the user
+                                                                    interface interesting, they’re more likely to
+                                                                    abandon your app. Thus, focus more on this level
+                                                                    because this is considered a make or break period
+                                                                    for your app.</div>
+                                                                <div><br></div>
+                                                                <div>Read More: <a
+                                                                        href="../the-process-of-mobile-app-designing/index.html"
+                                                                        target="_blank">The process of Mobile App
+                                                                        Designing</a></div>
+                                                                <div><br></div>
+                                                                <div>
+                                                                    <div><span
+                                                                            style="font-weight: bold;">Development.</span>
+                                                                        Now that your app’s interface is ready. The
+                                                                        development process will shift from the
+                                                                        designer’s hand to the developer’s. Coding will
+                                                                        begin both from the front-end side to back-end
+                                                                        development for your app to actually function.
+                                                                        Here technologies &amp; tools will be in use. A
+                                                                        testing environment would also be needed.
+                                                                        Throughout the development process, each &amp;
+                                                                        every function/feature of your app can be
+                                                                        tested.&nbsp;</div>
+                                                                    <div><br></div>
+                                                                    <div><span style="font-weight: bold;">Testing &amp;
+                                                                            QA (Question Analysis).</span> By this time,
+                                                                        your app would be almost functional and ready to
+                                                                        use. Overall testing and quality analysis would
+                                                                        be carried out at this phase. Testers and
+                                                                        Quality assurance experts would be
+                                                                        proof-checking the entire application, which
+                                                                        will pave the way to the application’s
+                                                                        effortless functionality.&nbsp;</div>
+                                                                    <div><br></div>
+                                                                    <div>Suppose the testers and QAs find any bug. In
+                                                                        that case, they will be quick to take notice and
+                                                                        get it fixed by the corresponding developers,
+                                                                        ensuring your app performs splendidly.&nbsp;
+                                                                    </div>
+                                                                    <div><br></div>
+                                                                    <h4>
+                                                                        <ul>
+                                                                            <li><span
+                                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">The
+                                                                                    launch.&nbsp;</span></li>
+                                                                        </ul>
+                                                                    </h4>
+                                                                    <div>Now comes a crucial stage- launching your app
+                                                                        in the stores. Yes, like every step, this step
+                                                                        is also taken care of by the app development
+                                                                        agency.&nbsp;</div>
+                                                                    <div><br></div>
+                                                                    <div>The agency will launch it in the pertinent app
+                                                                        stores so that your prospective customers can
+                                                                        download it. Google play store &amp; apple app
+                                                                        store are the most preferred with a large user
+                                                                        base.&nbsp;</div>
+                                                                    <div><span
+                                                                            style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;"><br></span>
+                                                                    </div>
+                                                                    <div><span
+                                                                            style="font-family: &quot;Open Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1rem;"><span
+                                                                                style="font-weight: bold;">Promoting.</span>
+                                                                            Usually, at our place, rather than just
+                                                                            doing post-launch marketing, we propose
+                                                                            clients do pre-launch marketing too.
+                                                                            Pre-launch marketing helps create a buzz,
+                                                                            which further helps get more
+                                                                            downloads.&nbsp;</span></div>
+                                                                    <div><br></div>
+                                                                    <div>Post-launch marketing includes photos, videos,
+                                                                        and content that can be displayed on the app
+                                                                        stores. Doing so will increase your app revenue
+                                                                        and increase your app store
+                                                                        visibility.&nbsp;&nbsp;</div>
+                                                                    <div><br></div>
+                                                                    <div>A reliable and efficient app development firm
+                                                                        will always take care of the marketing. It will
+                                                                        make sure that an app is promoted on their
+                                                                        social media handles.&nbsp;</div>
+                                                                    <div><br></div>
+                                                                    <div style="text-align:center;"><img
+                                                                            src="../../Admin/Files/BlogImage/e920ecc3-c5f0-4721-9336-93e6311312b8.jpg"
+                                                                            style="width: 50%;"></div>
+                                                                    <div style="text-align: center; "><span
+                                                                            id="docs-internal-guid-85a35b09-7fff-74e4-c0d5-e80369d3400a"><span
+                                                                                style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Image
+                                                                                by </span><a rel="nofollow"
+                                                                                href="https://pixabay.com/users/wir_sind_klein-6630807/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2993233"><span
+                                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Wilfried
+                                                                                    Pohnke</span></a><span
+                                                                                style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                                from </span><a rel="nofollow"
+                                                                                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2993233"><span
+                                                                                    style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">Pixabay</span></a><span
+                                                                                style="font-size: 8pt; font-family: Arial; color: rgb(25, 27, 38); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">
+                                                                            </span></span><br></div>
+                                                                    <div><br></div>
+                                                                    <div>
+                                                                        <div><span
+                                                                                style="font-weight: bold;">Maintaining.</span>
+                                                                            Here comes a critical unwritten guideline of
+                                                                            app development. App development is not only
+                                                                            limited to launch, but later stages are the
+                                                                            turning point.&nbsp;</div>
+                                                                        <div><br></div>
+                                                                        <div>Users will add feedback, give reviews, and
+                                                                            add new features; apps may face bugs,
+                                                                            efficiency issues will pop up, and many more
+                                                                            things. So, you will have to maintain the
+                                                                            app and continuously improve it through
+                                                                            updates.&nbsp;</div>
+                                                                        <div><br></div>
+                                                                        <h3><span
+                                                                                style="font-weight: bold; color: rgb(0, 0, 0);">To
+                                                                                wrap up.</span></h3>
+                                                                        <div>Now that we have given you a crystal clear
+                                                                            scenario of the app development process,
+                                                                            your next step should be to indulge in the
+                                                                            app development process.&nbsp;</div>
+                                                                        <div><br></div>
+                                                                        <div>But a significant thing to know is that the
+                                                                            idea behind the app also holds a crucial
+                                                                            milestone more than the app development
+                                                                            procedure.&nbsp;</div>
+                                                                        <div><br></div>
+                                                                        <div>Put a clear idea forward to the app
+                                                                            development company and ensure that you get
+                                                                            in sync with the company...</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tg-haslayout tg-sectionspace" style="padding-top:50px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tg-blogpost tg-blogpostvtwo tg-blogpostvseven">
+                                <div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1  col-lg-10 col-lg-push-1">
+                                    <div class="tg-detailbox">
+                                        <h1
+                                            style="text-align: center; line-height: 1.2; font-weight:600;padding-bottom: 19px;">
+                                            Other blogs</h1>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <article class="">
+                                        <figure>
+                                            <a
+                                                href="../vue-native-the-native-app-development-framework-that-delivers-efficient-cross-platform-development/index.html"><img
+                                                    style=" border: 1px solid #ededed;" class="blogindeximg"
+                                                    src="../../Files/BlogImage/56712705-b78f-44c5-9e72-7da83e87d0f7.jpg"></a>
+
+                                        </figure>
+                                        <div class="tg-postcontent">
+                                            <div class="tg-posttitle">
+                                                <h3>
+                                                    <a
+                                                        href="../vue-native-the-native-app-development-framework-that-delivers-efficient-cross-platform-development/index.html">
+
+
+                                                        Vue Native: The Native App Development Framework that Delivers
+                                                        Efficient Cross-Platform Development
+
+                                                    </a>
+                                                </h3>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <article class="">
+                                        <figure>
+                                            <a href="../the-process-of-mobile-app-designing/index.html"><img
+                                                    style=" border: 1px solid #ededed;" class="blogindeximg"
+                                                    src="../../Files/BlogImage/f7b83229-7b9d-482d-8597-5befd529e062.jpg"></a>
+
+                                        </figure>
+                                        <div class="tg-postcontent">
+                                            <div class="tg-posttitle">
+                                                <h3>
+                                                    <a href="../the-process-of-mobile-app-designing/index.html">
+
+
+                                                        The Process of Mobile App Designing
+
+                                                    </a>
+                                                </h3>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <article class="">
+                                        <figure>
+                                            <a
+                                                href="../13-modern-mobile-app-development-features-and-requirements/index.html"><img
+                                                    style=" border: 1px solid #ededed;" class="blogindeximg"
+                                                    src="../../Files/BlogImage/ec177954-7f1b-4d56-8e54-24f91a9ce0c3.jpg"></a>
+
+                                        </figure>
+                                        <div class="tg-postcontent">
+                                            <div class="tg-posttitle">
+                                                <h3>
+                                                    <a
+                                                        href="../13-modern-mobile-app-development-features-and-requirements/index.html">
+
+
+                                                        13 Modern Mobile App Development Features and Requirements
+
+                                                    </a>
+                                                </h3>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </article>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+
+            <footer id="tg-footer" class="tg-footer tg-footervtwo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="tg-footerlogobar">
+                                <strong class="tg-logo"><a href="../../index.html"><img
+                                            src="../../Content/images/logos/Secondary_logo.svg"></a></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tg-footercolumns">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="tg-footercolumn tg-widget">
+                                <ul class="tg-socialicons" style="padding:0;">
+                                    <li><a href="http://www.facebook.com/Cerdonis-Technologies-LLC-467013840720199"
+                                            target="_blank"><i class="fa fa-facebook-official"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="http://www.linkedin.com/company/cerdonis" target="_blank"><i
+                                                class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-12 col-lg-12">
+                            <span class="tg-copyright">660 Citadel Dr, Westmont, IL 60559, USA &nbsp; | <a
+                                    href="tel:+1 (708) 557-6205" style="color:#bebebe;">&nbsp; +1 (630) 394-4254
+                                    &nbsp;</a> | <a href="mailto:info@cerdonis.tech" style="color:#bebebe;">&nbsp;
+                                    info@cerdonis.tech&nbsp;</a> </span>
+                            <span class="tg-copyright" style="padding: 15px 0 0;">Copyright &copy; 2021 Cerdonis
+                                Technologies, LLC. All rights reserved. <a
+                                    href="../../privacy-policy/index.html">Privacy policy.</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="alert alert-dismissible text-center cookiealert" role="alert">
+        <div class="cookiealert-container">
+            <p class="cookie-text">
+                This website uses cookies to improve your experience.
+                <button type="button" class="btn acceptcookies" aria-label="Close">
+                    Got it!
+                </button>
+            </p>
+        </div>
+    </div>
+    <link href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="../../../code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap" rel="stylesheet" media="print"
+        onload="this.media='all';this.onload=null;">
+    <script async src="http://www.googletagmanager.com/gtag/js?id=UA-143591174-1" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-143591174-1');
+
+
+
+        function ActiveMenu(data) {
+            $(data).parent().find('li').removeClass("current-menu-item");
+            $(data).addClass("current-menu-item");
+        }
+    </script>
+
+
+
+    <script src="../../jQuery/bundlesb4d8?v=DcNIa6-dEuPgOh7lZ6iaRQrRG8Bj455WtGNQNy5QJV01"></script>
+
+    <script src="../../Content/js/parallax.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("#liblog");
+    </script>
+
+    <div class="modal fade" id="ws-register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="top:15%">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-12 ws-register-form text-center mx-auto pl-0">
+                        <div class="d-flex col-12 mt--0 text-center mx-auto">
+                            <img class="rounded-circle mr-1" src="../../Content/images/home/Paul.png" height="50"
+                                width="50" alt="" style="object-fit: cover;">
+                            <h5 class="align-self-center ml-2 text-uppercase" style="color:#4688C8; padding-top:10px;">
+                                Free Quote in 24 hours!</h5>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <form action="https://www.cerdonis.tech/home/contactus/" class="tg-formtheme tg-formstartproject"
+                        id="frmContactUs" method="post"><input id="url" name="url" type="hidden" value="" /><input
+                            id="gresponse" name="gresponse" type="hidden" value="" />
+                        <div class="form-group">
+                            <input class="form-control" data-val="true"
+                                data-val-maxlength="The field Name must be a string or array type with a maximum length of &#39;50&#39;."
+                                data-val-maxlength-max="50" data-val-required="Name is required" id="Name" name="Name"
+                                placeholder="Name" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Name"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" data-val="true" data-val-email="Invalid Email"
+                                data-val-maxlength="The field Email must be a string or array type with a maximum length of &#39;100&#39;."
+                                data-val-maxlength-max="100" data-val-required="Email is required" id="Email"
+                                name="Email" placeholder="Email" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Email"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" data-val="true"
+                                data-val-maxlength="The field Phone Number must be a string or array type with a maximum length of &#39;20&#39;."
+                                data-val-maxlength-max="20" id="PhoneNumber" name="PhoneNumber"
+                                placeholder="Phone number" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="PhoneNumber"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control select-country" data-val="true"
+                                data-val-number="The field CountryId must be a number."
+                                data-val-range="Country is required" data-val-range-max="2147483647"
+                                data-val-range-min="1" data-val-required="CountryId is required" id="CountryId"
+                                name="CountryId" style="width:100%">
+                                <option selected="selected" value="0">Select Your Country</option>
+                                <option value="247">United States</option>
+                                <option value="248">United Kingdom</option>
+                                <option value="249">Australia</option>
+                                <option value="250">Afghanistan</option>
+                                <option value="251">Albania</option>
+                                <option value="252">Algeria</option>
+                                <option value="253">American Samoa</option>
+                                <option value="254">Andorra</option>
+                                <option value="255">Angola</option>
+                                <option value="256">Anguilla</option>
+                                <option value="257">Antarctica</option>
+                                <option value="258">Antigua and Barbuda</option>
+                                <option value="259">Argentina</option>
+                                <option value="260">Armenia</option>
+                                <option value="261">Aruba</option>
+                                <option value="262">Austria</option>
+                                <option value="263">Azerbaijan</option>
+                                <option value="264">Bahamas</option>
+                                <option value="265">Bahrain</option>
+                                <option value="266">Bangladesh</option>
+                                <option value="267">Barbados</option>
+                                <option value="268">Belarus</option>
+                                <option value="269">Belgium</option>
+                                <option value="270">Belize</option>
+                                <option value="271">Benin</option>
+                                <option value="272">Bermuda</option>
+                                <option value="273">Bhutan</option>
+                                <option value="274">Bolivia</option>
+                                <option value="275">Bosnia and Herzegovina</option>
+                                <option value="276">Botswana</option>
+                                <option value="277">Bouvet Island</option>
+                                <option value="278">Brazil</option>
+                                <option value="279">British Indian Ocean Territory</option>
+                                <option value="280">Brunei Darussalam</option>
+                                <option value="281">Bulgaria</option>
+                                <option value="282">Burkina Faso</option>
+                                <option value="283">Burundi</option>
+                                <option value="284">Cambodia</option>
+                                <option value="285">Cameroon</option>
+                                <option value="286">Canada</option>
+                                <option value="287">Cape Verde</option>
+                                <option value="288">Cayman Islands</option>
+                                <option value="289">Central African Republic</option>
+                                <option value="290">Chad</option>
+                                <option value="291">Chile</option>
+                                <option value="292">China</option>
+                                <option value="293">Christmas Island</option>
+                                <option value="294">Cocos (Keeling) Islands</option>
+                                <option value="295">Colombia</option>
+                                <option value="296">Comoros</option>
+                                <option value="297">Congo</option>
+                                <option value="298">Cook Islands</option>
+                                <option value="299">Costa Rica</option>
+                                <option value="300">Croatia (Hrvatska)</option>
+                                <option value="301">Cuba</option>
+                                <option value="302">Cyprus</option>
+                                <option value="303">Czech Republic</option>
+                                <option value="304">Denmark</option>
+                                <option value="305">Djibouti</option>
+                                <option value="306">Dominica</option>
+                                <option value="307">Dominican Republic</option>
+                                <option value="308">East Timor</option>
+                                <option value="309">Ecuador</option>
+                                <option value="310">Egypt</option>
+                                <option value="311">El Salvador</option>
+                                <option value="312">Equatorial Guinea</option>
+                                <option value="313">Eritrea</option>
+                                <option value="314">Estonia</option>
+                                <option value="315">Ethiopia</option>
+                                <option value="316">Falkland Islands (Malvinas)</option>
+                                <option value="317">Faroe Islands</option>
+                                <option value="318">Fiji</option>
+                                <option value="319">Finland</option>
+                                <option value="320">France</option>
+                                <option value="321">France, Metropolitan</option>
+                                <option value="322">French Guiana</option>
+                                <option value="323">French Polynesia</option>
+                                <option value="324">French Southern Territories</option>
+                                <option value="325">Gabon</option>
+                                <option value="326">Gambia</option>
+                                <option value="327">Georgia</option>
+                                <option value="328">Germany</option>
+                                <option value="329">Ghana</option>
+                                <option value="330">Gibraltar</option>
+                                <option value="331">Guernsey</option>
+                                <option value="332">Greece</option>
+                                <option value="333">Greenland</option>
+                                <option value="334">Grenada</option>
+                                <option value="335">Guadeloupe</option>
+                                <option value="336">Guam</option>
+                                <option value="337">Guatemala</option>
+                                <option value="338">Guinea</option>
+                                <option value="339">Guinea-Bissau</option>
+                                <option value="340">Guyana</option>
+                                <option value="341">Haiti</option>
+                                <option value="342">Heard and Mc Donald Islands</option>
+                                <option value="343">Honduras</option>
+                                <option value="344">Hong Kong</option>
+                                <option value="345">Hungary</option>
+                                <option value="346">Iceland</option>
+                                <option value="347">India</option>
+                                <option value="348">Isle of Man</option>
+                                <option value="349">Indonesia</option>
+                                <option value="350">Iran (Islamic Republic of)</option>
+                                <option value="351">Iraq</option>
+                                <option value="352">Ireland</option>
+                                <option value="353">Israel</option>
+                                <option value="354">Italy</option>
+                                <option value="355">Ivory Coast</option>
+                                <option value="356">Jersey</option>
+                                <option value="357">Jamaica</option>
+                                <option value="358">Japan</option>
+                                <option value="359">Jordan</option>
+                                <option value="360">Kazakhstan</option>
+                                <option value="361">Kenya</option>
+                                <option value="362">Kiribati</option>
+                                <option value="363">Korea, Democratic People&#39;s Republic of</option>
+                                <option value="364">Korea, Republic of</option>
+                                <option value="365">Kosovo</option>
+                                <option value="366">Kuwait</option>
+                                <option value="367">Kyrgyzstan</option>
+                                <option value="368">Lao People&#39;s Democratic Republic</option>
+                                <option value="369">Latvia</option>
+                                <option value="370">Lebanon</option>
+                                <option value="371">Lesotho</option>
+                                <option value="372">Liberia</option>
+                                <option value="373">Libyan Arab Jamahiriya</option>
+                                <option value="374">Liechtenstein</option>
+                                <option value="375">Lithuania</option>
+                                <option value="376">Luxembourg</option>
+                                <option value="377">Macau</option>
+                                <option value="378">Macedonia</option>
+                                <option value="379">Madagascar</option>
+                                <option value="380">Malawi</option>
+                                <option value="381">Malaysia</option>
+                                <option value="382">Maldives</option>
+                                <option value="383">Mali</option>
+                                <option value="384">Malta</option>
+                                <option value="385">Marshall Islands</option>
+                                <option value="386">Martinique</option>
+                                <option value="387">Mauritania</option>
+                                <option value="388">Mauritius</option>
+                                <option value="389">Mayotte</option>
+                                <option value="390">Mexico</option>
+                                <option value="391">Micronesia, Federated States of</option>
+                                <option value="392">Moldova, Republic of</option>
+                                <option value="393">Monaco</option>
+                                <option value="394">Mongolia</option>
+                                <option value="395">Montenegro</option>
+                                <option value="396">Montserrat</option>
+                                <option value="397">Morocco</option>
+                                <option value="398">Mozambique</option>
+                                <option value="399">Myanmar</option>
+                                <option value="400">Namibia</option>
+                                <option value="401">Nauru</option>
+                                <option value="402">Nepal</option>
+                                <option value="403">Netherlands</option>
+                                <option value="404">Netherlands Antilles</option>
+                                <option value="405">New Caledonia</option>
+                                <option value="406">New Zealand</option>
+                                <option value="407">Nicaragua</option>
+                                <option value="408">Niger</option>
+                                <option value="409">Nigeria</option>
+                                <option value="410">Niue</option>
+                                <option value="411">Norfolk Island</option>
+                                <option value="412">Northern Mariana Islands</option>
+                                <option value="413">Norway</option>
+                                <option value="414">Oman</option>
+                                <option value="415">Pakistan</option>
+                                <option value="416">Palau</option>
+                                <option value="417">Palestine</option>
+                                <option value="418">Panama</option>
+                                <option value="419">Papua New Guinea</option>
+                                <option value="420">Paraguay</option>
+                                <option value="421">Peru</option>
+                                <option value="422">Philippines</option>
+                                <option value="423">Pitcairn</option>
+                                <option value="424">Poland</option>
+                                <option value="425">Portugal</option>
+                                <option value="426">Puerto Rico</option>
+                                <option value="427">Qatar</option>
+                                <option value="428">Reunion</option>
+                                <option value="429">Romania</option>
+                                <option value="430">Russian Federation</option>
+                                <option value="431">Rwanda</option>
+                                <option value="432">Saint Kitts and Nevis</option>
+                                <option value="433">Saint Lucia</option>
+                                <option value="434">Saint Vincent and the Grenadines</option>
+                                <option value="435">Samoa</option>
+                                <option value="436">San Marino</option>
+                                <option value="437">Sao Tome and Principe</option>
+                                <option value="438">Saudi Arabia</option>
+                                <option value="439">Senegal</option>
+                                <option value="440">Serbia</option>
+                                <option value="441">Seychelles</option>
+                                <option value="442">Sierra Leone</option>
+                                <option value="443">Singapore</option>
+                                <option value="444">Slovakia</option>
+                                <option value="445">Slovenia</option>
+                                <option value="446">Solomon Islands</option>
+                                <option value="447">Somalia</option>
+                                <option value="448">South Africa</option>
+                                <option value="449">South Georgia South Sandwich Islands</option>
+                                <option value="450">South Sudan</option>
+                                <option value="451">Spain</option>
+                                <option value="452">Sri Lanka</option>
+                                <option value="453">St. Helena</option>
+                                <option value="454">St. Pierre and Miquelon</option>
+                                <option value="455">Sudan</option>
+                                <option value="456">Suriname</option>
+                                <option value="457">Svalbard and Jan Mayen Islands</option>
+                                <option value="458">Swaziland</option>
+                                <option value="459">Sweden</option>
+                                <option value="460">Switzerland</option>
+                                <option value="461">Syrian Arab Republic</option>
+                                <option value="462">Taiwan</option>
+                                <option value="463">Tajikistan</option>
+                                <option value="464">Tanzania, United Republic of</option>
+                                <option value="465">Thailand</option>
+                                <option value="466">Togo</option>
+                                <option value="467">Tokelau</option>
+                                <option value="468">Tonga</option>
+                                <option value="469">Trinidad and Tobago</option>
+                                <option value="470">Tunisia</option>
+                                <option value="471">Turkey</option>
+                                <option value="472">Turkmenistan</option>
+                                <option value="473">Turks and Caicos Islands</option>
+                                <option value="474">Tuvalu</option>
+                                <option value="475">Uganda</option>
+                                <option value="476">Ukraine</option>
+                                <option value="477">United Arab Emirates</option>
+                                <option value="478">United States minor outlying islands</option>
+                                <option value="479">Uruguay</option>
+                                <option value="480">Uzbekistan</option>
+                                <option value="481">Vanuatu</option>
+                                <option value="482">Vatican City State</option>
+                                <option value="483">Venezuela</option>
+                                <option value="484">Vietnam</option>
+                                <option value="485">Virgin Islands (British)</option>
+                                <option value="486">Virgin Islands (U.S.)</option>
+                                <option value="487">Wallis and Futuna Islands</option>
+                                <option value="488">Western Sahara</option>
+                                <option value="489">Yemen</option>
+                                <option value="490">Zaire</option>
+                                <option value="491">Zambia</option>
+                                <option value="492">Zimbabwe</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="CountryId"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control selectbudget" data-val="true"
+                                data-val-required="Budget is required" id="Budget" name="Budget" style="width:100%">
+                                <option value="">Select budget</option>
+                                <option value="Less than 10K">Less than 10K</option>
+                                <option value="10K - 25K">10K - 25K</option>
+                                <option value="25K - 50K">25K - 50K</option>
+                                <option value="over 50K">over 50K</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="Budget"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea cols="20" data-val="true" data-val-required="Message is required" id="Message"
+                                name="Message" placeholder="Message" rows="2" style="height: 70px;">
+</textarea>
+                            <span class="field-validation-valid" data-valmsg-for="Message"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" data-val="true"
+                                data-val-required="The IsChecked field is required." id="IsChecked" name="IsChecked"
+                                style="margin-right: 10px;" type="checkbox" value="true" /><input name="IsChecked"
+                                type="hidden" value="false" /> I want NDA?<br />
+                            <p><small>A non-disclosure agreement (NDA), also known as a confidentiality agreement. A
+                                    legal contract between us which outlines that all the discussion or materials will
+                                    remain confidential and not shared with 3rd parties.</small></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Mirrored from www.cerdonis.tech/blogs/how-to-build-mobile-app-in-2021-comprehensive-guide/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 12:25:05 GMT -->
+
+</html>

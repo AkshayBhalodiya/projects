@@ -1,0 +1,1369 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<!-- Mirrored from www.cerdonis.tech/blogs/how-to-build-an-ar-museum-application/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 12:24:33 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="NpbQ2nGuO5o0iU6gZq2M_VRzKa38gk6MPQEXG9vqR5U" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.html">
+    <title>How to Build an AR Museum Application, Process, Features & Cost</title>
+
+
+    <meta name=description
+        content="How to build an AR Museum Application to stunned tourists & Visitors, this article breakdowns the entire development structure of an Augmented Reality integrated museum application's process, features & cost comprehensively to help museum owners properly understand the AR Museum application development process." />
+
+    <link rel="icon" href="../../Content/images/favicon.png" type="image/x-icon">
+    <link href="../css/bundles6c40.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .tg-innerbannervfour {
+            padding-top: 0px;
+        }
+
+        .tg-dropdowarrow {
+            color: #fff !important;
+        }
+
+        .tg-innerbannervfour figure figcaption {
+            padding: 0px;
+        }
+
+
+        .tg-innerbanner figure figcaption {
+            background: none;
+        }
+
+        .tg-description {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .tg-postcontent {
+            padding-bottom: 20px;
+            min-height: 105px;
+        }
+
+        .tg-detailbox .tg-description p {
+            /* float: left; */
+            text-align: left;
+        }
+
+        p span {
+            font-size: 18px !important;
+            color: #000000 !important;
+            font-family: Poppins, sans-serif !important;
+        }
+
+        span {
+            font-size: 18px !important;
+            color: #000000 !important;
+            font-family: Poppins, sans-serif !important;
+        }
+
+        .ePWcnt {
+            font-size: 48px;
+            line-height: 1;
+            color: rgb(0, 0, 0);
+            float: left;
+            letter-spacing: 1.54px;
+        }
+
+        .tg-copyright {
+            color: #bebebe !important;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .centered {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .parallax-slider {
+            height: 600px !important;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="467013840720199"
+        logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+    </div>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser.  to improve your experience.</p>
+    <![endif]-->
+
+    <div>
+        <div class="ws-topbar">
+            <div class="pull-left">
+                <div class="ws-topbar-message hidden-xs hiddenCell">
+                    <p class="mb-0">
+                        <a href="tel:+1 (630) 394-4254">+1 (630) 394-4254</a>
+                        |
+                        <a href="mailto: info@cerdonis.tech">info@cerdonis.tech</a>
+                    </p>
+                </div>
+            </div>
+            <div class="pull-right">
+                <ul class="ws-shop-menu">
+
+
+                    <li id="TalktoCiaran" class="ws-shop-cart">
+                        <a class="btn btn-sm" href="#ws-register-modal" data-toggle="modal">
+                            <img style="border-radius: 50%;" height="30" width="30"
+                                src="../../Content/images/home/Paul.png" />
+                            Talk to Paul!
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+
+        <header id="tg-header" class="tg-fixedheader tg-headervtwo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="tg-headercontent">
+                            <strong class="tg-logo">
+                                <a href="../../index.html">
+                                    <img src="../../Content/images/logos/Secondary_logo.svg" />
+                                    <img src="../../Content/images/logos/primary_logo.svg" />
+                                </a>
+                            </strong>
+                            <nav id="tg-nav" class="tg-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#tg-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+                                    <ul>
+                                        <li class="current-menu-item fontBold">
+                                            <a href="../../index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children fontBold" id="liabout">
+                                            <span class="tg-dropdowarrow"><i class="fa fa-angle-down"></i></span>
+                                            <a>About</a>
+                                            <ul class="sub-menu">
+                                                <li style="text-transform: initial;">
+                                                    <a href="../../about/index.html">About us</a>
+                                                </li>
+                                                <li style="text-transform: initial;">
+                                                    <a href="../../how-it-works/index.html">How it works?</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children fontBold" id="liservices">
+                                            <span class="tg-dropdowarrow"><i class="fa fa-angle-down"></i></span>
+                                            <a>Services</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Mobile App
+                                                        Development</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../mobile-app-development-company-in-usa/index.html">Mobile
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../android-app-development-company-in-usa/index.html">Android
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../iphone-app-development-company-in-usa/index.html">iPhone
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../react-native-development-company-in-usa/index.html">React
+                                                                Native Development</a></li>
+                                                        <li><a
+                                                                href="../../ux-ui-app-development-company-in-usa/index.html">UI/UX
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../prototype-mvp-development-company-in-usa/index.html">Prototype
+                                                                & MVP Development</a></li>
+                                                        <li><a href="../../game-development-company-in-usa/index.html">Mobile
+                                                                Game Development</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Web Development</a>
+                                                    <ul class="sub-menu submenuheight">
+                                                        <li><a
+                                                                href="../../asp-dotnet-mvc-development-company-in-usa/index.html">.Net
+                                                                MVC Development</a></li>
+                                                        <li><a
+                                                                href="../../asp-dotnet-core-development-company-in-usa/index.html">.Net
+                                                                Core Development</a></li>
+                                                        <li><a
+                                                                href="../../custom-software-development-company-in-usa/index.html">Custom
+                                                                Software Solutions</a></li>
+                                                        <li><a
+                                                                href="../../web-app-development-company-in-usa/index.html">Web
+                                                                App Development</a></li>
+                                                        <li><a
+                                                                href="../../mobile-websites-development-company-in-usa/index.html">Mobile
+                                                                Websites Development</a></li>
+                                                        <li><a
+                                                                href="../../reactjs-development-company-in-usa/index.html">ReactJs
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../responsive-website-design-company-in-usa/index.html">Website
+                                                                Design</a></li>
+                                                        <li><a
+                                                                href="../../wordpress-development-company-in-usa/index.html">WordPress</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="../../sitecore-developing-company-in-usa/index.html">SiteCore
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../sharepoint-development-company-in-usa/index.html">SharePoint
+                                                                Development</a></li>
+                                                        <li><a href="../../ssra-development-company-in-usa/index.html">SSRS
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../accelerated-mobile-page-website-development-in-usa/index.html">AMP
+                                                                Websites</a></li>
+                                                        <li><a
+                                                                href="../../epicor-customization-company-in-usa/index.html">Epicor
+                                                                Customization Services</a></li>
+                                                        <li><a
+                                                                href="../../epicor-development-company-in-usa/index.html">Epicor
+                                                                Development Services</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">SEO & Digital
+                                                        Marketing</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../search-engine-optimization-company-in-usa/index.html">Search
+                                                                Engine Optimization</a></li>
+                                                        <li><a href="../../digital-marketing-company-in-usa/index.html">Digital
+                                                                Marketing</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Future
+                                                        Technologies</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../internet-of-things-company-in-usa/index.html">Internet
+                                                                of Things</a></li>
+                                                        <li><a
+                                                                href="../../chatbots-development-company-in-usa/index.html">Chatbot
+                                                                Development</a></li>
+                                                        <li><a
+                                                                href="../../voice-apps-development-company-in-usa/index.html">VoiceApps</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Database</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../microsoft-sql-server-in-usa/index.html">Microsoft
+                                                                SQL Server</a></li>
+                                                        <li><a href="../../postgress-dba-company-in-usa/index.html">Postgres
+                                                                DBA</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a class="sub-cat" style="padding-bottom:8px;">Other Services</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a
+                                                                href="../../office-365-development-company-in-usa/index.html">Office
+                                                                365 Development</a></li>
+                                                        <li><a
+                                                                href="../../power-bi-data-analytics-company-in-usa/index.html">Power
+                                                                BI Data Analytics</a></li>
+                                                        <li><a
+                                                                href="../../blockchain-development-company-in-usa/index.html">Blockchain</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="../../wearable-app-development-company-in-usa/index.html">Wearables
+                                                                Development</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children fontBold" id="liblog">
+                                            <a href="../index.html">Blogs</a>
+                                        </li>
+                                        <li class="fontBold" id="liportfolio">
+                                            <a href="../../portfolio/index.html">Portfolio</a>
+                                        </li>
+                                        <li class="fontBold" id="licontact">
+                                            <a href="../../contact/index.html">Let's talk!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="tg-pushpage">
+
+
+
+            <section id="tg-introductions" class="tg-haslayout" data-z-index="-1" data-appear-top-offset="600"
+                data-parallax="scroll" data-image-src="../../Files/BlogImage/2234aec8-d029-4577-af97-a3d852257b80.jpg">
+                <div class="tg-parallax tg-parallaxmaingoal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-8 col-md-7 col-lg-7">
+                                <div class="tg-introductions">
+
+                                    <div class="tg-description" style="height:350px;">
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <main id="tg-main" class="tg-main tg-haslayout">
+                <!--************************************
+            Blog Detail Start
+    *************************************-->
+
+                <div id="tg-content" class="tg-content">
+                    <div class="tg-blogpost tg-blogdetail">
+                        <div class="tg-sectionspace tg-haslayout tg-commentsarea">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="row justify-content-center">
+                                        <div
+                                            class="col-xs-12 col-sm-12 col-md-10 col-md-push-1  col-lg-10 col-lg-push-1">
+                                            <div class="tg-detailbox">
+                                                <h1 style="text-align: center; line-height: 1.2; font-weight:600;">
+                                                    How to Build an AR Museum Application, Process, Features &amp; Cost
+                                                </h1>
+                                                <div class="tg-description">
+                                                    <div>Nowadays, many businesses are turning towards innovative &amp;
+                                                        practical solutions to remain competitive and flourish outside
+                                                        of their traditional core business - and in this digital world,
+                                                        AR technology has come as a solid opportunity to do so for many.
+                                                    </div>
+                                                    <div><br></div>
+                                                    <div>For museums that want to bring in many footfalls and actually
+                                                        fascinatingly engage visitors, integrating AR technology with
+                                                        antiqueness is the quintessential strategy.</div>
+                                                    <div><br></div>
+                                                    <div>What if you could bring 18th Century artifacts to life, help
+                                                        visitors connect with the original mastery, visualize the story
+                                                        behind the heirloom piece, and frantically get to know what our
+                                                        predecessors were up to.</div>
+                                                    <div><br></div>
+                                                    <div>Yes, that’s achievable with Augmented Reality. It’s just 8
+                                                        minutes of your time you need to know how to build an AR museum
+                                                        application. (we bet you won’t regret it)</div>
+                                                    <div><br></div>
+                                                    <div>So, let’s quickly know what AR applications are.</div>
+                                                    <div><br></div>
+                                                    <h2><b style="color: rgb(0, 0, 0);">What is an Augmented Reality app
+                                                            (AR App)?</b></h2>
+                                                    <div>AR applications are software applications that give an
+                                                        interactive experience to users of a real-world environment with
+                                                        the help of visual contents and audios. The objects are
+                                                        computer-generated and look as if residing in the real world.
+                                                        Many industries use AR to enhance the natural environment and
+                                                        offer an interactive, engaging experience to users. Some of the
+                                                        industries which use Augmented Reality (AR) are - gaming, health
+                                                        care, travel &amp; tourism, and many more.</div>
+                                                    <div><br></div>
+                                                    <div style="text-align: center;"><img
+                                                            src="../../Admin/Files/BlogImage/efc7299b-3030-4358-b695-8057acb42c5c.jpg"
+                                                            style="width: 50%;"></div>
+                                                    <div style="text-align: center;"><br></div>
+                                                    <div><span
+                                                            style="font-weight: bold; font-family: Muli, Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 1.74rem;">How
+                                                            Can Museums Use Augmented Reality (AR)?</span></div>
+                                                    <div><br></div>
+                                                    <div>AR is becoming a booming sector, especially with the advent of
+                                                        5G. Indeed for museums, there are endless possibilities.
+                                                        Integrating AR in a museum usually depends on the type of
+                                                        museum, the kinds of visitors, and the museum’s dimensions.
+                                                        Determined by that, your museum can behold different variations
+                                                        of Augmented reality.</div>
+                                                    <div><br></div>
+                                                    <div>The considerable ways to use Augmented Reality in a museum are
+                                                        the following:</div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="text-align: left; bold;=" "="" color:="" rgb(0,="" 0,="" 0);"="">Audio
+                                                                    Augmented Reality tours</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>Audio tours were already quite popular even before Augmented
+                                                        Reality had set its foot in the museums. Visitors thoroughly
+                                                        enjoy museum site visits when they come by audios that could
+                                                        explain the articles in the museum.</div>
+                                                    <div><br></div>
+                                                    <div>Imagine the audios integrated with Augmented Reality! What an
+                                                        experience it would be, isn’t it?</div>
+                                                    <div><br></div>
+                                                    <div>You could take advantage of augmented reality technology and
+                                                        turn a simple audio tour into a mesmerizing and unforgettable
+                                                        expedition.</div>
+                                                    <div><br></div>
+                                                    <div>An augmented reality app, provided with a smart headset, can
+                                                        perfectly amalgamate the information from all the
+                                                        detector/sensor a phone has. Building an AR application for a
+                                                        museum will work wonders in this case. With the help of <span
+                                                            style="font-weight: bold;">GPS</span> (to track a visitor’s
+                                                        position), <span style="font-weight: bold;">Gyroscope</span> (to
+                                                        track the direction a visitor looks at), and <span
+                                                            style="font-weight: bold;">Accelerometer</span> (to track
+                                                        the visitor’s movement), it is feasible to generate a 3D audio
+                                                        environment that can actually help the audience grasp the
+                                                        atmosphere of the museum and acknowledge where the sounds are
+                                                        coming from.</div>
+                                                    <div><br></div>
+                                                    <div>Further, you can give the users a customized experience by
+                                                        increasing and lowering the volume as per the visitor’s
+                                                        movements.</div>
+                                                    <div><br></div>
+                                                    <div>A museum integrated with audio augmented reality tours will
+                                                        definitely bring in more footfalls and progressively offer a
+                                                        highly immersive experience compared to ordinary audio tours.
+                                                    </div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="color: rgb(0, 0, 0); font-weight: bold; font-size: 1.51rem;">Displaying
+                                                                    information in a museum with Augmented
+                                                                    Reality</span><br></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>An exciting concept, museums can also allow sightseers to view
+                                                        exhibitions and get more information on the heirloom piece using
+                                                        the Augmented Reality application.</div>
+                                                    <div><br></div>
+                                                    <div>Moreover, museums with proud artistic works can also display
+                                                        the same artwork’s digital versions to capture a visitor’s
+                                                        attention more profusely. Further, the 3D visual art or 3D
+                                                        persona could also present a narration. Interesting, right?
+                                                    </div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Getting
+                                                                    Objects or Scenarios to Life With 3D in Augmented
+                                                                    Reality</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>With augmented reality applications for museums, you can easily
+                                                        get the essence of an object to reality, and that’s what
+                                                        ‘Augmented Reality’ is all about. The integration of three
+                                                        dimensions (3D) in AR opens doors to superior displays,
+                                                        especially bringing objects and scenarios to life. The
+                                                        superimposed images will engage your audience and reportedly
+                                                        lead them to observe the artifact again after looking at the 3D
+                                                        objects! And in addition, getting the real essence of any
+                                                        antiquity.</div>
+                                                    <div><br></div>
+                                                    <div>For instance, imagine ‘Mona Lisa’s painting’ coming live in the
+                                                        Louvre Museum, Paris, France. Aahah, how pretty it would be if
+                                                        she could take...imagine…</div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Open-Air
+                                                                    Museum Exploration Through Augmented Reality</span>
+                                                            </li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>Well, augmented reality is not only a thing of museums but also
+                                                        open-air museums, and building a museum-based application will
+                                                        take exploration outside of the museums!</div>
+                                                    <div><br></div>
+                                                    <div>Take cues from the mobile app industry that has also build a
+                                                        mobile app with perfect use of Augmented Reality. </div>
+                                                    <div><br></div>
+                                                    <div>‘Keepappy’ - a wellness app that has AR components incorporated
+                                                        in it. Even the mobile gaming industry is leveraging AR’s power
+                                                        to the fullest - ‘Pokemon Go’ is an ideal example of how AR can
+                                                        be used in location-based explorations.</div>
+                                                    <div><br></div>
+                                                    <div>Cerdonis Technologies LLC, a <a
+                                                            href="../../mobile-app-development-company-in-usa/index.html"
+                                                            target="_blank">mobile app development company</a> in
+                                                        Chicago quotes that “Museums can benefit the most from the
+                                                        potential AR beholds, integrating AR and letting creative
+                                                        streaks flow can wonderfully amaze the audience and bring in
+                                                        more footfalls”</div>
+                                                    <div><br></div>
+                                                    <h4><span
+                                                            style="font-weight: bold; font-style: italic; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Think
+                                                            of it: A 3D comrade welcoming your visitors to your heritage
+                                                            museum!</span></h4>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Augmented
+                                                                    Reality Marker</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>AR markers have been quite popular among museums. But don’t
+                                                        misinterpret with QR Codes or Barcodes! AR markers are visual
+                                                        signals that trigger the exhibition of virtual information
+                                                        processed by an AR application or through a camera.</div>
+                                                    <div><br></div>
+                                                    <div>As soon as the marker on an image or painting is captured on a
+                                                        person’s camera, it gives out a 3D presentation of the object;
+                                                        the same is also intersected with audio, video, or maybe
+                                                        information.</div>
+                                                    <div><br></div>
+                                                    <div>Besides, the AR marker works best in museums that face
+                                                        connection issues or if users cannot locate via a GPS signal or
+                                                        on bad wifi/internet connectivity days.<br><br></div>
+                                                    <h2 style="line-height: 24px;"><span
+                                                            style="font-weight: bold; color: rgb(0, 0, 0);">Advantages
+                                                            of Augmented Reality in Museums</span></h2>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Augmented
+                                                                    Reality Attracts More Visitors</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>When it comes to local museums, they find it hard to promote
+                                                        themselves outside of their local community. But with
+                                                        integrating augmented reality comes a plus point.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>Scanning the artifacts, detailing them through immersive
+                                                        content, high-class visualization with video, images, and 3D
+                                                        models - everything paves to the digital promotion of museums
+                                                        and eventually more footfalls and more growth!</div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Augmented
+                                                                    Reality Facilitates More Footfalls of the Younger
+                                                                    Generation</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>All through the years, it is seen that the millennials find a
+                                                        conventional museum quite off the beat. But Augmented Reality
+                                                        can, in turn, change that situation in your favor, indeed. We’re
+                                                        absolutely not lying!</div>
+                                                    <div><br></div>
+                                                    <div>It is seen that the younger generation is more hooked to their
+                                                        phones, and an Augmented reality-based application that
+                                                        especially appeals to the younger population can be
+                                                        unquestionably hit!</div>
+                                                    <div><br></div>
+                                                    <div>As AR applications involve active participation, younger users
+                                                        will be keener to explore the digitally immersed museum to
+                                                        ensure that your visitors grow to the fullest.</div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Augmented
+                                                                    Reality Keeps Engagement Levels High</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>Good stories, when blended with augmented reality, will give a
+                                                        great AR feel. When interesting facts are exhibited through AR,
+                                                        it leads the audience to feel more connected with the original
+                                                        content and thus make their visit to the museum an interesting
+                                                        and engaging one.</div>
+                                                    <div><br></div>
+                                                    <div>3D models pave the way to a better acknowledgment of themes,
+                                                        straightforward understanding of complex processes, immersive
+                                                        visualizing of scenarios, and interacting with the
+                                                        augmentations. Consequently leading to better engagement levels
+                                                        among the audience.<br><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Augmented
+                                                                    Reality is Interactive &amp; Enjoyable</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>Museums are primarily a family place and essentially attract
+                                                        families with small kids. By adding a little AR fun factor, you
+                                                        can make their trip enjoyable. Build interactive museum
+                                                        applications with AR and adapt AR elements like quest games
+                                                        which families can play together and learn through it. With an
+                                                        interactive AR museum app, visitors both young and old can take
+                                                        part in interactive &amp; enjoyable explorations and at the same
+                                                        time learn and engage in an easy peasy way. An AR play factor
+                                                        can capture the young audience, which can work to the museum’s
+                                                        advantage.</div>
+                                                    <h2><span style="font-weight: bold; color: rgb(0, 0, 0);">Features
+                                                            to Add in Augmented Reality Museum App</span></h2>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Object
+                                                                    &amp; Place Tracking</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>You have incredible objet d'art in your museum, and your museum
+                                                        is large enough to hold many visitors. Well, now what if one of
+                                                        your visitors has especially come to see Pablo Picasso’s ‘the
+                                                        old guitarist painting’. The tracking features of the AR museum
+                                                        application will facilitate a real-time 360° augmented reality
+                                                        experience of the painting, and your visitor will get to observe
+                                                        the picture thoroughly.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div style="text-align: center;"><img
+                                                            src="../../Admin/Files/BlogImage/b4a5611d-77da-44b5-96f5-5387474085dd.jpg"
+                                                            style="width: 50%;"><br></div>
+                                                    <div><br></div>
+                                                    <div>In the same way, the object tracking feature can be applied to
+                                                        physical objects around the museum. The place or scene tracking
+                                                        feature in your AR museum application will enable your visitors
+                                                        to track, recognize &amp; augment featured-packed museum halls,
+                                                        sites, and larger heirloom pieces.&nbsp;&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>Place &amp; object tracking comes as a perfect AR feature for
+                                                        augmenting artifacts, antique pieces, historical monuments,
+                                                        facades, and museum objects.</div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Image
+                                                                    Detection</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>The image detection feature offers Augmented Reality (AR)
+                                                        museum apps to detect, hunt down, and augment 2D images. We at
+                                                        Cerdonis Tech use multiple target functionality that allows
+                                                        tracking of numerous images instantly.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>This AR feature basically assists in detecting &amp; augmenting
+                                                        magazines, museum labels, brochures, ancient documents, gaming
+                                                        cards, or antique books.&nbsp;&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>A fine example for image detection is the Donaghmore Famine
+                                                        Workhouse Museum.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div style="text-align: center; "><iframe frameborder="0"
+                                                            src="http://www.youtube.com/embed/sEbTzBnCGPE" width="640"
+                                                            height="360" class="note-video-clip"></iframe><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="font-weight: bold; color: rgb(0, 0, 0);">Augmented
+                                                                    Reality Instant Detection</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>Integrating AR instant detection in the development of
+                                                        Augmented Reality museum applications open the way for AR apps
+                                                        to overlay engaging augmentations on concrete tangible surfaces,
+                                                        in the absence of AR markers.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>An ideal AR feature, ‘instant detection’ helps in object
+                                                        preliminary view, visualization, the <a
+                                                            href="../the-process-of-mobile-app-designing/index.html"
+                                                            target="_blank">process of designing</a>, interaction,
+                                                        communication, and creating immersive scenes.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <h3>
+                                                        <ul>
+                                                            <li style="text-align: left;"><span
+                                                                    style="color: rgb(0, 0, 0); font-weight: bold;">Geo
+                                                                    AR</span></li>
+                                                        </ul>
+                                                    </h3>
+                                                    <div>As it is seen that an application is incomplete without
+                                                        prominent app development features, similarly, AR application is
+                                                        incomplete without Geo AR. Geo AR feature lets an AR developer
+                                                        integrate interactive, engaging visual content to location-based
+                                                        artifact markers.</div>
+                                                    <div><br></div>
+                                                    <div>Navigation, tours, communication, gaming are the result of Geo
+                                                        AR features. In a museum, location-based experiences work the
+                                                        best, and Geo AR also facilitates that. We also make sure that
+                                                        we make utmost use of sensor-enabled signals and provide a
+                                                        perfect AR museum application.</div>
+                                                    <div><br></div>
+                                                    <div>Read More:&nbsp;<a
+                                                            href="../13-modern-mobile-app-development-features-and-requirements/index.html"
+                                                            target="_blank">13 Modern Mobile App Development Features
+                                                            and Requirements</a></div>
+                                                    <h2><span
+                                                            style="font-weight: bold; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Technology
+                                                            Stack for Augmented Reality Museum Application</span>&nbsp;
+                                                    </h2>
+                                                    <div><br></div>
+                                                    <div>There are various SDKs (Software Development Kit) available to
+                                                        develop an AR museum app. We recommend using the technology
+                                                        stack provided by the specific platforms.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>For Android, mostly <a rel="nofollow"
+                                                            href="https://developers.google.com/ar"
+                                                            target="_blank">Google AR</a> Core is used for integrating
+                                                        Augmented Reality. While for iOS, there’s an <a rel="nofollow"
+                                                            href="http://ios ar kithttps://developer.apple.com/augmented-reality/"
+                                                            target="_blank">iOS AR Kit</a> available. Using the native
+                                                        AR technologies provides fascinating results to AR museum
+                                                        applications and rules out outstanding AR features.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>When it comes to tools, Google prefers the <a rel="nofollow"
+                                                            href="https://firebase.google.com/docs/ml-kit"
+                                                            target="_blank">Firebase ML kit</a> and iOS has an Apple AR
+                                                        kit. The two tools, when integrated with native languages &amp;
+                                                        <a href="../differences-between-designing-native-apps-for-ios-and-android-platforms/index.html"
+                                                            target="_blank">native app designing</a>, lay the foundation
+                                                        for ideal AR museum applications. There are always options for
+                                                        other SDKs; you can contact your software development company
+                                                        for the same.&nbsp;
+                                                    </div>
+                                                    <h2><span style="font-weight: bold; color: rgb(0, 0, 0);">Costs
+                                                            &amp; Development Time of AR Application</span></h2>
+                                                    <div><br></div>
+                                                    <div>AR has the potential to make your museum into a digitally
+                                                        dynamic world. The general development time &amp; cost varies
+                                                        based on your application &amp; your museum type, as we said
+                                                        earlier.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>If you want to build a simple AR museum application that
+                                                        includes scanning &amp; just walking around the museum, it may
+                                                        take up to 3 weeks (if the 3D models are ready). While the cost
+                                                        of a basic AR museum app without models starts at $7000*</div>
+                                                    <div><br></div>
+                                                    <div>One that requires indoor/outdoor navigation, interactive 3D
+                                                        models that involve a visitor finding its way to the object may
+                                                        necessarily need up to 1-2 months. And the cost may start at
+                                                        $10000*</div>
+                                                    <div><br></div>
+                                                    <div>AR museum apps that demand architectural visualization, 360
+                                                        walkthroughs, overall 3D modeling, interactive user manuals, AR
+                                                        audio integration, and many such AR elements will take up to 2-3
+                                                        months, and the cost may start with $15000*</div>
+                                                    <div><br></div>
+                                                    <div>Suppose you have anything to discuss regarding the cost &amp;
+                                                        the estimations. In that case, we’re always ready to furnish you
+                                                        with the necessary information.&nbsp;</div>
+                                                    <h2><span style="font-weight: bold; color: rgb(0, 0, 0);">Let’s Wrap
+                                                            up</span></h2>
+                                                    <div><br></div>
+                                                    <div>The Augmented Reality app development industry is booming, and
+                                                        for sure, there’s more to come in this field. Comparing to VR,
+                                                        augmented reality is still growing at a high pace. When we check
+                                                        from the costs front, AR is comparatively cheaper than VR, which
+                                                        means it can easily be integrated.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>Museums have long standing been visitor’s favorite, and it’s
+                                                        time to add new scopes to a museum and bring more displays to
+                                                        life. In addition to it, 5G is also creating more space for the
+                                                        Augmented Reality world.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>A recent study shows that the integration of Augmented
+                                                        Reality-based museum apps leads to a direct increase in visitors
+                                                        and the amount of time spent on museums’ grounds. Donaghmore
+                                                        witnessed a rise of 1.5 hours on the grounds; isn’t that
+                                                        interesting?&nbsp;</div>
+                                                    <div><br></div>
+                                                    <div>Our world is closely becoming a digital world, and museums can
+                                                        use AR technology and attract audiences and get them to explore.
+                                                        If you have thoughts of developing an AR-based app for your
+                                                        museum, you can hire a remote developer to do the job. In any
+                                                        case, you’re stuck on your idea, then get it validated by
+                                                        us.&nbsp;</div>
+                                                    <div><br></div>
+                                                    <h4 style="text-align: center; "><span
+                                                            style="font-weight: bold; color: rgb(0, 0, 0); font-family: system-ui;">We’ll
+                                                            be glad to do so :)</span></h4>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tg-haslayout tg-sectionspace" style="padding-top:50px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tg-blogpost tg-blogpostvtwo tg-blogpostvseven">
+                                <div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1  col-lg-10 col-lg-push-1">
+                                    <div class="tg-detailbox">
+                                        <h1
+                                            style="text-align: center; line-height: 1.2; font-weight:600;padding-bottom: 19px;">
+                                            Other blogs</h1>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <article class="">
+                                        <figure>
+                                            <a
+                                                href="../vue-native-the-native-app-development-framework-that-delivers-efficient-cross-platform-development/index.html"><img
+                                                    style=" border: 1px solid #ededed;" class="blogindeximg"
+                                                    src="../../Files/BlogImage/56712705-b78f-44c5-9e72-7da83e87d0f7.jpg"></a>
+
+                                        </figure>
+                                        <div class="tg-postcontent">
+                                            <div class="tg-posttitle">
+                                                <h3>
+                                                    <a
+                                                        href="../vue-native-the-native-app-development-framework-that-delivers-efficient-cross-platform-development/index.html">
+
+
+                                                        Vue Native: The Native App Development Framework that Delivers
+                                                        Efficient Cross-Platform Development
+
+                                                    </a>
+                                                </h3>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <article class="">
+                                        <figure>
+                                            <a href="../the-process-of-mobile-app-designing/index.html"><img
+                                                    style=" border: 1px solid #ededed;" class="blogindeximg"
+                                                    src="../../Files/BlogImage/f7b83229-7b9d-482d-8597-5befd529e062.jpg"></a>
+
+                                        </figure>
+                                        <div class="tg-postcontent">
+                                            <div class="tg-posttitle">
+                                                <h3>
+                                                    <a href="../the-process-of-mobile-app-designing/index.html">
+
+
+                                                        The Process of Mobile App Designing
+
+                                                    </a>
+                                                </h3>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <article class="">
+                                        <figure>
+                                            <a
+                                                href="../13-modern-mobile-app-development-features-and-requirements/index.html"><img
+                                                    style=" border: 1px solid #ededed;" class="blogindeximg"
+                                                    src="../../Files/BlogImage/ec177954-7f1b-4d56-8e54-24f91a9ce0c3.jpg"></a>
+
+                                        </figure>
+                                        <div class="tg-postcontent">
+                                            <div class="tg-posttitle">
+                                                <h3>
+                                                    <a
+                                                        href="../13-modern-mobile-app-development-features-and-requirements/index.html">
+
+
+                                                        13 Modern Mobile App Development Features and Requirements
+
+                                                    </a>
+                                                </h3>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </article>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+
+            <footer id="tg-footer" class="tg-footer tg-footervtwo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="tg-footerlogobar">
+                                <strong class="tg-logo"><a href="../../index.html"><img
+                                            src="../../Content/images/logos/Secondary_logo.svg"></a></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tg-footercolumns">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="tg-footercolumn tg-widget">
+                                <ul class="tg-socialicons" style="padding:0;">
+                                    <li><a href="http://www.facebook.com/Cerdonis-Technologies-LLC-467013840720199"
+                                            target="_blank"><i class="fa fa-facebook-official"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="http://www.linkedin.com/company/cerdonis" target="_blank"><i
+                                                class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-12 col-lg-12">
+                            <span class="tg-copyright">660 Citadel Dr, Westmont, IL 60559, USA &nbsp; | <a
+                                    href="tel:+1 (708) 557-6205" style="color:#bebebe;">&nbsp; +1 (630) 394-4254
+                                    &nbsp;</a> | <a href="mailto:info@cerdonis.tech" style="color:#bebebe;">&nbsp;
+                                    info@cerdonis.tech&nbsp;</a> </span>
+                            <span class="tg-copyright" style="padding: 15px 0 0;">Copyright &copy; 2021 Cerdonis
+                                Technologies, LLC. All rights reserved. <a
+                                    href="../../privacy-policy/index.html">Privacy policy.</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="alert alert-dismissible text-center cookiealert" role="alert">
+        <div class="cookiealert-container">
+            <p class="cookie-text">
+                This website uses cookies to improve your experience.
+                <button type="button" class="btn acceptcookies" aria-label="Close">
+                    Got it!
+                </button>
+            </p>
+        </div>
+    </div>
+    <link href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="../../../code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap" rel="stylesheet" media="print"
+        onload="this.media='all';this.onload=null;">
+    <script async src="http://www.googletagmanager.com/gtag/js?id=UA-143591174-1" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-143591174-1');
+
+
+
+        function ActiveMenu(data) {
+            $(data).parent().find('li').removeClass("current-menu-item");
+            $(data).addClass("current-menu-item");
+        }
+    </script>
+
+
+
+    <script src="../../jQuery/bundlesb4d8?v=DcNIa6-dEuPgOh7lZ6iaRQrRG8Bj455WtGNQNy5QJV01"></script>
+
+    <script src="../../Content/js/parallax.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("#liblog");
+    </script>
+
+    <div class="modal fade" id="ws-register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="top:15%">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-12 ws-register-form text-center mx-auto pl-0">
+                        <div class="d-flex col-12 mt--0 text-center mx-auto">
+                            <img class="rounded-circle mr-1" src="../../Content/images/home/Paul.png" height="50"
+                                width="50" alt="" style="object-fit: cover;">
+                            <h5 class="align-self-center ml-2 text-uppercase" style="color:#4688C8; padding-top:10px;">
+                                Free Quote in 24 hours!</h5>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <form action="https://www.cerdonis.tech/home/contactus/" class="tg-formtheme tg-formstartproject"
+                        id="frmContactUs" method="post"><input id="url" name="url" type="hidden" value="" /><input
+                            id="gresponse" name="gresponse" type="hidden" value="" />
+                        <div class="form-group">
+                            <input class="form-control" data-val="true"
+                                data-val-maxlength="The field Name must be a string or array type with a maximum length of &#39;50&#39;."
+                                data-val-maxlength-max="50" data-val-required="Name is required" id="Name" name="Name"
+                                placeholder="Name" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Name"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" data-val="true" data-val-email="Invalid Email"
+                                data-val-maxlength="The field Email must be a string or array type with a maximum length of &#39;100&#39;."
+                                data-val-maxlength-max="100" data-val-required="Email is required" id="Email"
+                                name="Email" placeholder="Email" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="Email"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" data-val="true"
+                                data-val-maxlength="The field Phone Number must be a string or array type with a maximum length of &#39;20&#39;."
+                                data-val-maxlength-max="20" id="PhoneNumber" name="PhoneNumber"
+                                placeholder="Phone number" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="PhoneNumber"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control select-country" data-val="true"
+                                data-val-number="The field CountryId must be a number."
+                                data-val-range="Country is required" data-val-range-max="2147483647"
+                                data-val-range-min="1" data-val-required="CountryId is required" id="CountryId"
+                                name="CountryId" style="width:100%">
+                                <option selected="selected" value="0">Select Your Country</option>
+                                <option value="247">United States</option>
+                                <option value="248">United Kingdom</option>
+                                <option value="249">Australia</option>
+                                <option value="250">Afghanistan</option>
+                                <option value="251">Albania</option>
+                                <option value="252">Algeria</option>
+                                <option value="253">American Samoa</option>
+                                <option value="254">Andorra</option>
+                                <option value="255">Angola</option>
+                                <option value="256">Anguilla</option>
+                                <option value="257">Antarctica</option>
+                                <option value="258">Antigua and Barbuda</option>
+                                <option value="259">Argentina</option>
+                                <option value="260">Armenia</option>
+                                <option value="261">Aruba</option>
+                                <option value="262">Austria</option>
+                                <option value="263">Azerbaijan</option>
+                                <option value="264">Bahamas</option>
+                                <option value="265">Bahrain</option>
+                                <option value="266">Bangladesh</option>
+                                <option value="267">Barbados</option>
+                                <option value="268">Belarus</option>
+                                <option value="269">Belgium</option>
+                                <option value="270">Belize</option>
+                                <option value="271">Benin</option>
+                                <option value="272">Bermuda</option>
+                                <option value="273">Bhutan</option>
+                                <option value="274">Bolivia</option>
+                                <option value="275">Bosnia and Herzegovina</option>
+                                <option value="276">Botswana</option>
+                                <option value="277">Bouvet Island</option>
+                                <option value="278">Brazil</option>
+                                <option value="279">British Indian Ocean Territory</option>
+                                <option value="280">Brunei Darussalam</option>
+                                <option value="281">Bulgaria</option>
+                                <option value="282">Burkina Faso</option>
+                                <option value="283">Burundi</option>
+                                <option value="284">Cambodia</option>
+                                <option value="285">Cameroon</option>
+                                <option value="286">Canada</option>
+                                <option value="287">Cape Verde</option>
+                                <option value="288">Cayman Islands</option>
+                                <option value="289">Central African Republic</option>
+                                <option value="290">Chad</option>
+                                <option value="291">Chile</option>
+                                <option value="292">China</option>
+                                <option value="293">Christmas Island</option>
+                                <option value="294">Cocos (Keeling) Islands</option>
+                                <option value="295">Colombia</option>
+                                <option value="296">Comoros</option>
+                                <option value="297">Congo</option>
+                                <option value="298">Cook Islands</option>
+                                <option value="299">Costa Rica</option>
+                                <option value="300">Croatia (Hrvatska)</option>
+                                <option value="301">Cuba</option>
+                                <option value="302">Cyprus</option>
+                                <option value="303">Czech Republic</option>
+                                <option value="304">Denmark</option>
+                                <option value="305">Djibouti</option>
+                                <option value="306">Dominica</option>
+                                <option value="307">Dominican Republic</option>
+                                <option value="308">East Timor</option>
+                                <option value="309">Ecuador</option>
+                                <option value="310">Egypt</option>
+                                <option value="311">El Salvador</option>
+                                <option value="312">Equatorial Guinea</option>
+                                <option value="313">Eritrea</option>
+                                <option value="314">Estonia</option>
+                                <option value="315">Ethiopia</option>
+                                <option value="316">Falkland Islands (Malvinas)</option>
+                                <option value="317">Faroe Islands</option>
+                                <option value="318">Fiji</option>
+                                <option value="319">Finland</option>
+                                <option value="320">France</option>
+                                <option value="321">France, Metropolitan</option>
+                                <option value="322">French Guiana</option>
+                                <option value="323">French Polynesia</option>
+                                <option value="324">French Southern Territories</option>
+                                <option value="325">Gabon</option>
+                                <option value="326">Gambia</option>
+                                <option value="327">Georgia</option>
+                                <option value="328">Germany</option>
+                                <option value="329">Ghana</option>
+                                <option value="330">Gibraltar</option>
+                                <option value="331">Guernsey</option>
+                                <option value="332">Greece</option>
+                                <option value="333">Greenland</option>
+                                <option value="334">Grenada</option>
+                                <option value="335">Guadeloupe</option>
+                                <option value="336">Guam</option>
+                                <option value="337">Guatemala</option>
+                                <option value="338">Guinea</option>
+                                <option value="339">Guinea-Bissau</option>
+                                <option value="340">Guyana</option>
+                                <option value="341">Haiti</option>
+                                <option value="342">Heard and Mc Donald Islands</option>
+                                <option value="343">Honduras</option>
+                                <option value="344">Hong Kong</option>
+                                <option value="345">Hungary</option>
+                                <option value="346">Iceland</option>
+                                <option value="347">India</option>
+                                <option value="348">Isle of Man</option>
+                                <option value="349">Indonesia</option>
+                                <option value="350">Iran (Islamic Republic of)</option>
+                                <option value="351">Iraq</option>
+                                <option value="352">Ireland</option>
+                                <option value="353">Israel</option>
+                                <option value="354">Italy</option>
+                                <option value="355">Ivory Coast</option>
+                                <option value="356">Jersey</option>
+                                <option value="357">Jamaica</option>
+                                <option value="358">Japan</option>
+                                <option value="359">Jordan</option>
+                                <option value="360">Kazakhstan</option>
+                                <option value="361">Kenya</option>
+                                <option value="362">Kiribati</option>
+                                <option value="363">Korea, Democratic People&#39;s Republic of</option>
+                                <option value="364">Korea, Republic of</option>
+                                <option value="365">Kosovo</option>
+                                <option value="366">Kuwait</option>
+                                <option value="367">Kyrgyzstan</option>
+                                <option value="368">Lao People&#39;s Democratic Republic</option>
+                                <option value="369">Latvia</option>
+                                <option value="370">Lebanon</option>
+                                <option value="371">Lesotho</option>
+                                <option value="372">Liberia</option>
+                                <option value="373">Libyan Arab Jamahiriya</option>
+                                <option value="374">Liechtenstein</option>
+                                <option value="375">Lithuania</option>
+                                <option value="376">Luxembourg</option>
+                                <option value="377">Macau</option>
+                                <option value="378">Macedonia</option>
+                                <option value="379">Madagascar</option>
+                                <option value="380">Malawi</option>
+                                <option value="381">Malaysia</option>
+                                <option value="382">Maldives</option>
+                                <option value="383">Mali</option>
+                                <option value="384">Malta</option>
+                                <option value="385">Marshall Islands</option>
+                                <option value="386">Martinique</option>
+                                <option value="387">Mauritania</option>
+                                <option value="388">Mauritius</option>
+                                <option value="389">Mayotte</option>
+                                <option value="390">Mexico</option>
+                                <option value="391">Micronesia, Federated States of</option>
+                                <option value="392">Moldova, Republic of</option>
+                                <option value="393">Monaco</option>
+                                <option value="394">Mongolia</option>
+                                <option value="395">Montenegro</option>
+                                <option value="396">Montserrat</option>
+                                <option value="397">Morocco</option>
+                                <option value="398">Mozambique</option>
+                                <option value="399">Myanmar</option>
+                                <option value="400">Namibia</option>
+                                <option value="401">Nauru</option>
+                                <option value="402">Nepal</option>
+                                <option value="403">Netherlands</option>
+                                <option value="404">Netherlands Antilles</option>
+                                <option value="405">New Caledonia</option>
+                                <option value="406">New Zealand</option>
+                                <option value="407">Nicaragua</option>
+                                <option value="408">Niger</option>
+                                <option value="409">Nigeria</option>
+                                <option value="410">Niue</option>
+                                <option value="411">Norfolk Island</option>
+                                <option value="412">Northern Mariana Islands</option>
+                                <option value="413">Norway</option>
+                                <option value="414">Oman</option>
+                                <option value="415">Pakistan</option>
+                                <option value="416">Palau</option>
+                                <option value="417">Palestine</option>
+                                <option value="418">Panama</option>
+                                <option value="419">Papua New Guinea</option>
+                                <option value="420">Paraguay</option>
+                                <option value="421">Peru</option>
+                                <option value="422">Philippines</option>
+                                <option value="423">Pitcairn</option>
+                                <option value="424">Poland</option>
+                                <option value="425">Portugal</option>
+                                <option value="426">Puerto Rico</option>
+                                <option value="427">Qatar</option>
+                                <option value="428">Reunion</option>
+                                <option value="429">Romania</option>
+                                <option value="430">Russian Federation</option>
+                                <option value="431">Rwanda</option>
+                                <option value="432">Saint Kitts and Nevis</option>
+                                <option value="433">Saint Lucia</option>
+                                <option value="434">Saint Vincent and the Grenadines</option>
+                                <option value="435">Samoa</option>
+                                <option value="436">San Marino</option>
+                                <option value="437">Sao Tome and Principe</option>
+                                <option value="438">Saudi Arabia</option>
+                                <option value="439">Senegal</option>
+                                <option value="440">Serbia</option>
+                                <option value="441">Seychelles</option>
+                                <option value="442">Sierra Leone</option>
+                                <option value="443">Singapore</option>
+                                <option value="444">Slovakia</option>
+                                <option value="445">Slovenia</option>
+                                <option value="446">Solomon Islands</option>
+                                <option value="447">Somalia</option>
+                                <option value="448">South Africa</option>
+                                <option value="449">South Georgia South Sandwich Islands</option>
+                                <option value="450">South Sudan</option>
+                                <option value="451">Spain</option>
+                                <option value="452">Sri Lanka</option>
+                                <option value="453">St. Helena</option>
+                                <option value="454">St. Pierre and Miquelon</option>
+                                <option value="455">Sudan</option>
+                                <option value="456">Suriname</option>
+                                <option value="457">Svalbard and Jan Mayen Islands</option>
+                                <option value="458">Swaziland</option>
+                                <option value="459">Sweden</option>
+                                <option value="460">Switzerland</option>
+                                <option value="461">Syrian Arab Republic</option>
+                                <option value="462">Taiwan</option>
+                                <option value="463">Tajikistan</option>
+                                <option value="464">Tanzania, United Republic of</option>
+                                <option value="465">Thailand</option>
+                                <option value="466">Togo</option>
+                                <option value="467">Tokelau</option>
+                                <option value="468">Tonga</option>
+                                <option value="469">Trinidad and Tobago</option>
+                                <option value="470">Tunisia</option>
+                                <option value="471">Turkey</option>
+                                <option value="472">Turkmenistan</option>
+                                <option value="473">Turks and Caicos Islands</option>
+                                <option value="474">Tuvalu</option>
+                                <option value="475">Uganda</option>
+                                <option value="476">Ukraine</option>
+                                <option value="477">United Arab Emirates</option>
+                                <option value="478">United States minor outlying islands</option>
+                                <option value="479">Uruguay</option>
+                                <option value="480">Uzbekistan</option>
+                                <option value="481">Vanuatu</option>
+                                <option value="482">Vatican City State</option>
+                                <option value="483">Venezuela</option>
+                                <option value="484">Vietnam</option>
+                                <option value="485">Virgin Islands (British)</option>
+                                <option value="486">Virgin Islands (U.S.)</option>
+                                <option value="487">Wallis and Futuna Islands</option>
+                                <option value="488">Western Sahara</option>
+                                <option value="489">Yemen</option>
+                                <option value="490">Zaire</option>
+                                <option value="491">Zambia</option>
+                                <option value="492">Zimbabwe</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="CountryId"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control selectbudget" data-val="true"
+                                data-val-required="Budget is required" id="Budget" name="Budget" style="width:100%">
+                                <option value="">Select budget</option>
+                                <option value="Less than 10K">Less than 10K</option>
+                                <option value="10K - 25K">10K - 25K</option>
+                                <option value="25K - 50K">25K - 50K</option>
+                                <option value="over 50K">over 50K</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="Budget"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea cols="20" data-val="true" data-val-required="Message is required" id="Message"
+                                name="Message" placeholder="Message" rows="2" style="height: 70px;">
+</textarea>
+                            <span class="field-validation-valid" data-valmsg-for="Message"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" data-val="true"
+                                data-val-required="The IsChecked field is required." id="IsChecked" name="IsChecked"
+                                style="margin-right: 10px;" type="checkbox" value="true" /><input name="IsChecked"
+                                type="hidden" value="false" /> I want NDA?<br />
+                            <p><small>A non-disclosure agreement (NDA), also known as a confidentiality agreement. A
+                                    legal contract between us which outlines that all the discussion or materials will
+                                    remain confidential and not shared with 3rd parties.</small></p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Mirrored from www.cerdonis.tech/blogs/how-to-build-an-ar-museum-application/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Jun 2021 12:24:37 GMT -->
+
+</html>
